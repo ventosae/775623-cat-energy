@@ -1,0 +1,28 @@
+// .site-list {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.site-list__item {
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 70px;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid $gray-line;
+}
+
+.site-list__link {
+  padding: 5px 0;
+  color: $black-text;
+  text-transform: uppercase;
+
+  &:hover{
+    color: #68b738;
+    opacity: 0.6;
+  }
+}
