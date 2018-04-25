@@ -3,10 +3,14 @@
 //   flex-direction: column;
 // }
 
+
+.site-list {
+  padding: 0;
+}
+
 .site-list__item {
   display: inline-block;
   width: 100%;
-  padding: 0 20px;
   font-size: 20px;
   font-weight: 900;
   line-height: 70px;
@@ -21,8 +25,7 @@
   color: $black-text;
   text-transform: uppercase;
 
-  &:hover{
-    color: #68b738;
-    opacity: 0.6;
+  &:hover {
+    color: $text-green--hover;
   }
 }

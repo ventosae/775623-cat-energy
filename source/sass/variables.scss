@@ -2,8 +2,13 @@ $text-color: #444444;
 $black-text: #121212;
 $text-green: #68b738;
 $text-green--hover: #5eaa2f;
-$text-green: #f2f2f2;
+$text-gray: #f2f2f2;
 $gray-line: #cfcfcf;
 
 $text-font: arial, helvetica, sans-serif;
 $oswald-font: "Oswald", arial, helvetica, sans-serif;
+
+@mixin reset($padding: 0, $margin: 0) {
+  padding: $padding;
+  margin: $margin;
+}
