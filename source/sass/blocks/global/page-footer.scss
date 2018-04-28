@@ -20,6 +20,17 @@
   border-bottom: 1px solid $gray-line;
 }
 
+.page-footer__links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer_link:hover {
+  color: $text-green--hover;
+}
+
 .page-footer__item {
   min-width: 30px;
   margin: 0 13px;
@@ -34,12 +45,14 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-color;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &:active {
     color: $text-green--hover;
   }
 
   &:hover {
-    color:$text-green--hover;
+    color: $text-green--hover;
   }
 }
