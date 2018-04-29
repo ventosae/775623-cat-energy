@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $text-green;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $text-green--hover;
+  }
+
+  &:active {
+    color: $gray-line;
+    background-color: $text-gray;
+  }
+}
