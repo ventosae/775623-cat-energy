@@ -4,8 +4,46 @@
   width: 100%;
   min-height: 65px;
   background-color: #ffffff;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 
   &__logo-pic {
-    margin: 0 auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-pic {
+      display: flex;
+      margin: auto;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-header {
+    flex-direction: row;
+    width: $desktop-width;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 51px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-pic {
+      padding-left: 40px;
+      margin: 0;
+
+    }
   }
 }

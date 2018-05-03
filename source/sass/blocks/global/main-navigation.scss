@@ -1,16 +1,24 @@
 .main-navigation {
-  // margin: 0 auto;
+  display: flex;
+  min-width: 320px;
+  padding: 0 20px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 
-.center-wrapper {
-
-  min-width: 320px;
+/* .center-wrapper {
   display: flex;
 }
-
+ */
 .main-navigation__toggle {
-
   min-width: 320px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    margin: 0;
+    padding: 0 0;
+  }
 }

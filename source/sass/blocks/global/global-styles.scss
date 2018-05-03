@@ -8,18 +8,6 @@ body {
   margin: 0;
 }
 
-// @media (min-width: $tablet-width) {
-//   body {
-
-//   }
-// }
-
-
-// @media (min-width: $desktop-width) {
-//   body {
-
-//   }
-// }
 
 a {
   text-decoration: none;
@@ -34,4 +22,14 @@ textarea,
 select,
 button {
   font: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
