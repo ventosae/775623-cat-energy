@@ -1,10 +1,10 @@
 .main-intro {
   width: 100%;
   height: auto;
-
   margin-bottom: 22px;
-
   background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
+  margin-right: auto;
+  margin-left: auto;
 
   &__wrapper {
     display: flex;
@@ -55,5 +55,109 @@
 
   &__program-button:hover {
     background-color: $text-green--hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-intro {
+    background: none;
+    padding-top: 60px;
+  }
+
+  .main-intro__wrapper {
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 90px;
+  }
+
+  .main-intro__motto {
+    color: $black-text;
+    margin: 0;
+    order: 2;
+    font-size: 20px;
+    padding: 0 0 50px 0;
+  }
+
+  .main-intro__header {
+    font-size: 60px;
+    max-width: 487px;
+    padding: 0 0 50px 0;
+    color: $black-text;
+    margin: 0;
+    text-align: left;
+    line-height: 60px;
+    order: 1;
+  }
+
+  .main-intro__program-button {
+    margin: 0;
+    order: 3;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .main-intro__product {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+  }
+
+  .main-intro__product-img {
+    width: 709px;
+    height: 609px;
+  }
+
+  .main-intro__product::before {
+    content: " ";
+    display: block;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-intro {
+    padding-top: 60px;
+    width: 1220px;
+    max-width: 1220px;
+    position: relative;
+  }
+
+  .main-intro__wrapper {
+    padding-left: 80px;
+  }
+
+  .main-intro__product-img {
+    width: 552px;
+    height: 449px;
+    z-index: 1;
+    left: 480px;
+    position: absolute;
+  }
+
+  .main-intro__product::after {
+    position: absolute;
+    z-index: -1;
+    top: -118px;
+    right: -110px;
+    display: block;
+    width: 720px;
+    height: 696px;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+    content: " ";
+    background-color: #68b738;
+    background-size: cover;
+  }
+
+  .main-intro__product::before {
+    content: " ";
+    display: block;
+    height: 35px;
   }
 }

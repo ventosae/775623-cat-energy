@@ -1,6 +1,12 @@
 .page-footer {
   padding-top: 35px;
   background-color: $text-gray;
+  margin: auto;
+}
+
+.page-footer-wraper {
+  max-width: 280px;
+  margin: auto;
 }
 
 .page-footer__logo-name {
@@ -54,5 +60,57 @@
 
   &:hover {
     color: $text-green--hover;
+  }
+}
+
+.footer-copyright__text {
+  font-family: $text-font;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .page-footer-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .page-footer__social {
+    border: none;
+    min-height: 0;
+    width: 384px;
+  }
+
+  .page-footer__logo-name {
+    margin-bottom: 0;
+  }
+
+  .footer-copyright__text {
+    font-size: 16px;
+  }
+
+  .footer-copyright__img {
+    width: 27px;
+    // height: 34px;
+  }
+
+  .footer-copyright__link {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-copyright {
+    width: 162px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-footer-wraper {
+    max-width: 1220px;
   }
 }

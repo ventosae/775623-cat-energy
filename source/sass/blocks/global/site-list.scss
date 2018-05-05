@@ -1,8 +1,3 @@
-// .site-list {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 
 .site-list {
   padding: 0;
@@ -19,7 +14,6 @@
   font-weight: 900;
   line-height: 70px;
   list-style: none;
-  // margin: auto;
   border-bottom: 1px solid $gray-line;
 }
 
@@ -81,6 +75,28 @@
 
     &__item {
       font-size: 20px;
+    }
+
+    .site-list__link--index {
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    .site-list__link--index-active::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      height: 3px;
+      bottom: -13px;
     }
   }
 }

@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   min-height: 65px;
-  background-color: #ffffff;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -17,8 +16,6 @@
   .page-header {
     flex-direction: row;
     width: $tablet-width;
-    padding-left: 30px;
-    padding-right: 30px;
     margin-top: 20px;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +40,6 @@
     &__logo-pic {
       padding-left: 40px;
       margin: 0;
-
     }
   }
 }
