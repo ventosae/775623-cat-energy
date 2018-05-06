@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" title="Main Style">
     <title>Cat Energy 🐱 - Функциональное Питание для Котов</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
-  <body>
+  <body class="page-body__index" >
 
     <header class="page-header">
       <a class="page-header__logo-pic" href="index.html">
-      <img width="195" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+      <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
       </a>
       <nav class="main-navigation">
-        <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+        <!-- <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div> -->
+        <ul class="site-list ">
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог Продукции</a>
+            <a class="site-list__link site-list__link--index" href="#">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор Програмы</a>
+            <a class="site-list__link site-list__link--index" href="#">Подбор Програмы</a>
           </li>
         </ul>
       </nav>
@@ -33,18 +34,20 @@
         <div class="main-intro__wrapper">
           <h1 class="main-intro__header">Функциональное питание для котов</h1>
           <h2 class="main-intro__motto">Занялся собой? Займись котом!</h2>
-          <img class="main-intro__product" width="280" height="271" alt="Cat Energy Pro Курица" src="img/index-can-mobile@1x.png">
+          <div class="main-intro__product">
+          <img class="main-intro__product-img" width="280" height="271" alt="Cat Energy Pro Курица" src="img/index-can-mobile@1x.png">
+          </div>
           <a class="main-intro__program-button" href="">Подобрать программу</a>
         </div>
       </section>
       <section class="programs">
-        <div class="programs__type programs--slim">
-          <h3 class="programs__header">Похудение</h3>
-          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link" href="#">Каталог Slim</a>
+        <div class="programs__type programs__type--slim">
+          <h3 class="programs__header programs--slim">Похудение</h3>
+          <p class="programs__description programs__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__link s" href="#">Каталог Slim</a>
         </div>
-        <div class="programs__type programs--pro">
-          <h3 class="programs__header">Набор Массы</h3>
+        <div class="programs__type ">
+          <h3 class="programs__header programs--pro">Набор Массы</h3>
           <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="programs__link" href="#">Каталог Pro</a>
         </div>
@@ -52,42 +55,43 @@
       <section class="how-it-works">
         <h3 class="how-it-works__header">Как это работает</h3>
         <ul class="how-it-works__list">
-          <li class="how-it-works__item how-it-works__item--healthy">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="how-it-works__item how-it-works__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="how-it-works__item how-it-works__item--functional">Замените один-два приема обычной еды на наше функциональное питан</li>
-          <li class="how-it-works__item how-it-works__item--changes">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="how-it-works__item how-it-works__item--healthy"><p class="how-it-works__text how-it-works__text--healthy">Функциональное питание содержит только полезные питательные вещества.</p></li>
+          <li class="how-it-works__item how-it-works__item--powder"><p class="how-it-works__text how-it-works__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p></li>
+          <li class="how-it-works__item how-it-works__item--functional"><p class="how-it-works__text how-it-works__text--functional">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
+          <li class="how-it-works__item how-it-works__item--changes"><p class="how-it-works__text how-it-works__text--changes">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
         </ul>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo-name" href="index.html">
-      <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
-      </a>
-      <div class="page-footer__social">
-      <ul class="page-footer__links">
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--vk" href="#">
-          <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg">
+      <div class="page-footer-wraper">
+        <a class="page-footer__logo-name" href="index.html">
+        <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
         </a>
-      </li>
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--instagram" href="#">
-          <img width="20px" height="20px"  alt="Html Academy Грам" src="img/icon-insta-mobile.svg">
-        </a>
-      </li>
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--facebook" href="#">
-          <img width="20px" height="20px" alt="Html Academy Фейсбуша" src="img/icon-fb-mobile.svg">
-        </a>
-      </li>
-      </ul>
-      </div>
-      <div class="footer-copyright">
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
-          <span class="footer-copyright__text">HTML Academy</span>
-          <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
-        </a>
+        <div class="page-footer__social">
+        <ul class="page-footer__links">
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--vk" href="#">
+            <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg">
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--instagram" href="#">
+            <img width="20px" height="20px"  alt="Html Academy Грам" src="img/icon-insta-mobile.svg">
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--facebook" href="#">
+            <img width="20px" height="20px" alt="Html Academy Фейсбуша" src="img/icon-fb-mobile.svg">
+          </a>
+        </li>
+        </ul>
+        </div>
+        <div class="footer-copyright">
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
+            <span class="footer-copyright__text">HTML Academy</span>
+            <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
+          </a>
       </div>
     </footer>
   </body>

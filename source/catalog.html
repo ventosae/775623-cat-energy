@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" title="Main Style">
     <title>Каталог Продукции | Cat Energy 🐱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="catalog-body">
 
     <header class="page-header">
       <a class="page-header__logo-pic" href="index.html">
-      <img width="195" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+      <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
       </a>
       <nav class="main-navigation">
-        <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
+        <!-- <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div> -->
+        <ul class="site-list ">
+          <li class="site-list__item ">
             <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог Продукции</a>
+            <a class="site-list__link site-list__link--active" href="#">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Подбор Програмы</a>
@@ -40,7 +41,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> PRO 500 г</h3>
+                  PRO 500 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -66,7 +67,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> PRO 1000 г</h3>
+                  PRO 1000 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -92,7 +93,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> PRO 500 г</h3>
+                  PRO 500 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -118,7 +119,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> PRO 1000 г</h3>
+                  PRO 1000 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -144,7 +145,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> Slim 500 г</h3>
+                  Slim 500 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -170,7 +171,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> Slim 1000 г</h3>
+                  Slim 1000 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -196,7 +197,7 @@
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
-                  <br> Slim 500 г</h3>
+                  Slim 500 г</h3>
               </a>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Объем</dt>
@@ -214,44 +215,48 @@
             <a class="button catalog-product__button" href="#">Заказать</a>
           </article>
         </li>
+        <li class="catalog-product__item">
+        <div class="catalog-product__show-all">
+          <p class="catalog-product__subtitle">Показать еще 100500 товаров</p>
+          <p class="catalog-product__text">На самом деле вкусов гораздо больше!</p>
+          <a class="button catalog__button button--grey" href="#">Показать все</a>
+        </div>
+        </li>
       </ul>
     </section>
 
-    <div class="catalog-product__show-all">
-      <p class="catalog-product__subtitle">Показать еще 100500 товаров</p>
-      <p class="catalog-product__text">На самом деле вкусов гораздо больше!</p>
-      <a class="button catalog__button button--grey" href="#">Показать все</a>
-    </div>
+
   </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo-name" href="index.html">
-      <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
-      </a>
-      <div class="page-footer__social">
-      <ul class="page-footer__links">
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--vk" href="#">
-          <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg">
+      <div class="page-footer-wraper">
+        <a class="page-footer__logo-name" href="index.html">
+        <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
         </a>
-      </li>
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--instagram" href="#">
-          <img width="20px" height="20px"  alt="Html Academy Грам" src="img/icon-insta-mobile.svg">
-        </a>
-      </li>
-      <li class="page-footer__item">
-        <a class="page-footer_link page-footer_link--facebook" href="#">
-          <img width="20px" height="20px" alt="Html Academy Фейсбуша" src="img/icon-fb-mobile.svg">
-        </a>
-      </li>
-      </ul>
-      </div>
-      <div class="footer-copyright">
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
-        <span class="footer-copyright__text">HTML Academy</span>
-        <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
-        </a>
+        <div class="page-footer__social">
+        <ul class="page-footer__links">
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--vk" href="#">
+            <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg">
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--instagram" href="#">
+            <img width="20px" height="20px"  alt="Html Academy Грам" src="img/icon-insta-mobile.svg">
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer_link page-footer_link--facebook" href="#">
+            <img width="20px" height="20px" alt="Html Academy Фейсбуша" src="img/icon-fb-mobile.svg">
+          </a>
+        </li>
+        </ul>
+        </div>
+        <div class="footer-copyright">
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
+            <span class="footer-copyright__text">HTML Academy</span>
+            <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
+          </a>
       </div>
     </footer>
 

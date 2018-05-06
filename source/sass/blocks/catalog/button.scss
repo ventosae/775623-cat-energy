@@ -1,6 +1,7 @@
+
 .button {
   display: block;
-  width: 300px;
+  width: 280px;
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -10,6 +11,7 @@
   background-color: $text-green;
   border: none;
   cursor: pointer;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -19,5 +21,32 @@
   &:active {
     color: $gray-line;
     background-color: $text-gray;
+  }
+}
+
+.button--grey {
+  background-color: $text-gray;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $text-gray;
+    opacity: 0.8;
+    color: $text-green--hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 249px;
+    padding: 10px;
+    vertical-align: middle;
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .button {
+    width: 169px;
   }
 }
