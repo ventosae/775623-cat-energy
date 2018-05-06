@@ -67,6 +67,10 @@
   font-family: $text-font;
 }
 
+.footer-copyright {
+  width: 208px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 60px 30px 60px 30px;
@@ -96,7 +100,7 @@
 
   .footer-copyright__img {
     width: 27px;
-    // height: 34px;
+    height: 34px;
   }
 
   .footer-copyright__link {
@@ -112,5 +116,10 @@
 @media (min-width: 1100px) {
   .page-footer-wraper {
     max-width: 1220px;
+  }
+
+  .page-footer {
+    max-width: 100%;
+    width: 100%;
   }
 }
