@@ -10,11 +10,14 @@
   <body class="page-body__index" >
 
     <header class="page-header">
-      <a class="page-header__logo-pic" href="index.html">
-      <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
-      </a>
-      <nav class="main-navigation">
-        <!-- <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div> -->
+      <div class="page-header__wrapper" >
+        <button class="page-header__toggle page-header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="page-header__logo-pic" href="index.html">
+        <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+        </a>
+      </div>
+
+      <nav class="main-navigation main-navigation--open main-navigation--closed ">
         <ul class="site-list ">
           <li class="site-list__item ">
             <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
@@ -23,7 +26,7 @@
             <a class="site-list__link site-list__link--index" href="#">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--index" href="#">Подбор Програмы</a>
+            <a class="site-list__link site-list__link--index" href="#">Подбор Программы</a>
           </li>
         </ul>
       </nav>

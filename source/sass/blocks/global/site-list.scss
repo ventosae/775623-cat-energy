@@ -5,55 +5,59 @@
   flex-wrap: wrap;
   display: flex;
   box-sizing: border-box;
+  margin: 0; /* new */
 }
 
 .site-list__item {
   display: flex;
   width: 100%;
   font-size: 20px;
-  font-weight: 900;
-  line-height: 70px;
+  font-weight: 500;
+  line-height: 20px;
   list-style: none;
   border-bottom: 1px solid $gray-line;
+  min-height: 66px; /* new */
+  align-items: center;
 }
 
 .site-list__link {
-  padding: 5px 0;
   color: $black-text;
   text-transform: uppercase;
   margin: auto;
   position: relative;
+  font-family: $oswald-medium-font;
 
-  &:hover {
-    color: $text-green--hover;
+  &:hover:not(.site-list__link--index-active) {
+    opacity: 0.5;
   }
 
-  &:active {
-    opacity: 0.5;
+  &:active:not(.site-list__link--index-active) {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-list {
+    max-width: 320px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    width: auto;
-    display: flex;
-    align-self: auto;
     margin: 0;
     font-size: 18px;
-    line-height: 0;
+    line-height: 25px;
     border-bottom: none;
-    font-weight: 400;
+    min-height: auto;
+    width: auto;
   }
 
   .site-list {
     width: 440px;
     flex-wrap: nowrap;
-    max-width: $tablet-width;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
   .site-list__link--active::after {
@@ -63,39 +67,45 @@
     background-color: $text-green;
     width: 100%;
     height: 2px;
-    bottom: -13px;
+    bottom: -10px;
+  }
+
+  .site-list__link {
+    font-family: $oswald-font;
   }
 }
 
 @media (min-width: 1100px) {
   .site-list {
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    width: 480px;
+  }
 
-    &__item {
-      font-size: 20px;
-    }
+  .site-list__link--index {
+    color: #ffffff;
 
-    .site-list__link--index {
+    &:hover:not(.site-list__link--index-active) {
+      opacity: 0.5;
       color: #ffffff;
-
-      &:hover {
-        opacity: 0.5;
-      }
-
-      &:active {
-        opacity: 0.8;
-      }
     }
 
-    .site-list__link--index-active::after {
-      content: "";
-      display: block;
-      position: absolute;
-      background-color: #ffffff;
-      width: 100%;
-      height: 3px;
-      bottom: -13px;
+    &:active:not(.site-list__link--index-active)   {
+      opacity: 0.3;
+      color: #ffffff;
     }
+  }
+
+  .site-list__link--index-active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+  }
+
+  .site-list__item {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
