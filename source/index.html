@@ -10,11 +10,14 @@
   <body class="page-body__index" >
 
     <header class="page-header">
-      <a class="page-header__logo-pic" href="index.html">
-      <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
-      </a>
-      <nav class="main-navigation">
-        <!-- <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div> -->
+      <div class="page-header__wrapper" >
+        <button class="page-header__toggle page-header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="page-header__logo-pic" href="index.html">
+        <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+        </a>
+      </div>
+
+      <nav class="main-navigation main-navigation--open main-navigation--closed ">
         <ul class="site-list ">
           <li class="site-list__item ">
             <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
@@ -23,7 +26,7 @@
             <a class="site-list__link site-list__link--index" href="#">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--index" href="#">Подбор Програмы</a>
+            <a class="site-list__link site-list__link--index" href="#">Подбор Программы</a>
           </li>
         </ul>
       </nav>
@@ -60,6 +63,48 @@
           <li class="how-it-works__item how-it-works__item--functional"><p class="how-it-works__text how-it-works__text--functional">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
           <li class="how-it-works__item how-it-works__item--changes"><p class="how-it-works__text how-it-works__text--changes">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
         </ul>
+      </section>
+      <section class="example">
+          <div class="example__wrapper">
+            <div class="example__feature">
+              <h3 class="example__header">Живой пример</h3>
+              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по‑прежнему спит по 16 часов в день.</p>
+                <div class="example__feature-wrapper">
+                  <div class="example__feature-wrapper--description">
+                    <dl class="example__feature-box">
+                      <dd class="example__result">5 кг</dd>
+                      <dt class="example__value">снижение <br>
+                      веса</dt>
+                  </dl>
+                  <dl class="example__feature-box">
+                      <dd class="example__result">60 дней</dd>
+                      <dt class="example__value">затрачено времени</dt>
+                  </dl>
+
+                </div>
+                  <p class="example__expenses"><span class="example__subtitle"> затраты на питание: </span> 15 000 руб.</p>
+                </div>
+
+              </div>
+              <div class="example__comaprison-wrapper">
+                  <img class="example__img" atl="Пухлый кот, до Cat Energy" width="311" height="232" src="img/before-mobile@1x.png"">
+                  <img class="example__img" atl="Похудевший кот, после Cat Energy" src="">
+                  <div class="example__toggle">
+                    <p class="example__before">Было</p>
+                    <div class="example__before-after-toggle"></div>
+                    <p class="example__after">Стало</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="adress">
+          <div class="adress__wrapper">
+              <p class="adress__dealers"></p>
+              <p class="adress__details"></p>
+          </div>
+          <div class="adress__map">
+              <img class="adress__img src="">
+          </div>
       </section>
     </main>
 

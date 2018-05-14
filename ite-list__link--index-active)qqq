@@ -1,0 +1,425 @@
+[33mcommit e91e2ebd33463497cd990e0c7f1b24cc62fecb40[m[33m ([m[1;36mHEAD -> [m[1;32mmodule4-task1[m[33m, [m[1;31morigin/module4-task1[m[33m)[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sun May 6 20:49:10 2018 +1000
+
+    Flex Layout - Main Parts Finished - v0.5
+
+ source/catalog.html                              |  91 [32m+++++++++[m[31m--------[m
+ source/form.html                                 |  65 [32m++++++[m[31m------[m
+ source/index.html                                |   3 [32m+[m[31m-[m
+ source/sass/blocks/catalog/button.scss           |  31 [32m+++++[m[31m-[m
+ source/sass/blocks/catalog/catalog-body.scss     |   5 [32m+[m[31m-[m
+ source/sass/blocks/catalog/catalog-main.scss     |  43 [32m+++++++[m[31m-[m
+ source/sass/blocks/catalog/catalog-products.scss | 120 [32m+++++++++++++++++++++++[m
+ source/sass/blocks/global/main-navigation.scss   |  12 [32m+[m[31m--[m
+ source/sass/blocks/global/page-footer.scss       |  11 [32m++[m[31m-[m
+ source/sass/blocks/global/page-header.scss       |  13 [32m+[m[31m--[m
+ source/sass/blocks/global/site-list.scss         |   6 [32m+[m[31m-[m
+ source/sass/blocks/index/programs.scss           |   6 [32m+[m[31m-[m
+ 12 files changed, 301 insertions(+), 105 deletions(-)
+
+[33mcommit 5533684778f496e62f9604ce82d6665ddc8d8576[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sun May 6 03:33:08 2018 +1000
+
+    Flex Layout - index done - v0.3
+
+ source/index.html                              |  79 [32m++++++[m[31m------[m
+ source/sass/blocks/global/main-navigation.scss |  12 [32m+[m[31m-[m
+ source/sass/blocks/global/page-footer.scss     |  58 [32m+++++++++[m
+ source/sass/blocks/global/page-header.scss     |   4 [31m-[m
+ source/sass/blocks/global/site-list.scss       |  28 [32m++++[m[31m-[m
+ source/sass/blocks/index/how-it-works.scss     | 124 [32m+++++++++++++++++++[m
+ source/sass/blocks/index/main-intro.scss       | 108 [32m+++++++++++++++[m[31m-[m
+ source/sass/blocks/index/page-main.scss        |  23 [32m+++[m[31m-[m
+ source/sass/blocks/index/programs.scss         | 164 [32m++++++++++++++++++++++++[m[31m-[m
+ source/sass/style.scss                         |   1 [32m+[m
+ 10 files changed, 539 insertions(+), 62 deletions(-)
+
+[33mcommit da5a216518e36d55de004cde30371c74990ced05[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Fri May 4 01:17:14 2018 +1000
+
+    Flex Layout - Header - v0.2
+
+ source/index.html                              | 10 [32m++[m[31m---[m
+ source/sass/blocks/global/global-styles.scss   | 22 [32m+++++[m[31m----[m
+ source/sass/blocks/global/main-navigation.scss | 22 [32m++++++[m[31m---[m
+ source/sass/blocks/global/page-header.scss     | 40 [32m++++++++++++++++[m[31m-[m
+ source/sass/blocks/global/site-list.scss       | 62 [32m++++++++++++++++++++++++[m[31m--[m
+ source/sass/variables.scss                     |  2 [32m+[m[31m-[m
+ 6 files changed, 129 insertions(+), 29 deletions(-)
+
+[33mcommit 1a994791bab2b724a2891312fb9ac057a6d5e2b0[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Wed May 2 23:14:45 2018 +1000
+
+    Flex Layout - Initial Commit - v0.1
+
+ source/imgs/cat-energy-index-desktop.jpg       | Bin [31m0[m -> [32m822616[m bytes
+ source/imgs/cat-energy-index-mobile.jpg        | Bin [31m0[m -> [32m376687[m bytes
+ source/imgs/cat-energy-index-tablet.jpg        | Bin [31m0[m -> [32m728462[m bytes
+ source/index.html                              |   8 [32m+++[m[31m----[m
+ source/sass/blocks/global/global-styles.scss   |  19 [32m++++++++++++++[m[31m---[m
+ source/sass/blocks/global/main-navigation.scss |  13 [32m++++++[m[31m------[m
+ source/sass/blocks/index/how-it-works.scss     |  11 [32m++++++[m[31m----[m
+ source/sass/blocks/index/main-intro.scss       |  19 [32m++++++++[m[31m---------[m
+ source/sass/blocks/index/programs.scss         |  28 [32m++++++++++++++++++++++[m[31m---[m
+ source/sass/style.scss                         |   2 [32m+[m[31m-[m
+ source/sass/variables.scss                     |   3 [32m+++[m
+ 11 files changed, 72 insertions(+), 31 deletions(-)
+
+[33mcommit 8cbb107435e52b15c8d324df11951c5c6cb26a80[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 0891b78 4b14f3b
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Apr 29 23:00:10 2018 +0300
+
+    Merge pull request #8 from ventosae/module3-task1
+
+[33mcommit 4b14f3b1704c9ce6904a4d6db2e236644f447864[m[33m ([m[1;31morigin/module3-task1[m[33m)[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sat Apr 28 15:03:27 2018 +1000
+
+    Sass - Travis Fixes - v1.2
+
+ source/sass/fonts.scss | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 11f38697314f197a8b2079df164d0f2adb4ea9c2[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sat Apr 28 14:55:33 2018 +1000
+
+    Saas - travis fixes - v1.1
+
+ source/catalog.html                              |   5 [32m+[m[31m-[m
+ source/form.html                                 |   3 [32m+[m[31m-[m
+ source/img/logo-mobile.svg                       |   1 [31m-[m
+ source/index.html                                |   6 [32m+[m[31m-[m
+ source/sass/blocks/catalog/button.scss           |   4 [32m+[m[31m-[m
+ source/sass/blocks/catalog/catalog-body.scss     |   4 [32m+[m
+ source/sass/blocks/catalog/catalog-main.scss     |   2 [31m-[m
+ source/sass/blocks/catalog/catalog-products.scss |   1 [31m-[m
+ source/sass/blocks/form/form-main.scss           |   4 [32m+[m
+ source/sass/blocks/global/main-navigation.scss   |   4 [31m-[m
+ source/sass/blocks/global/page-header.scss       |   1 [31m-[m
+ source/sass/blocks/index/how-it-works.scss       |   1 [31m-[m
+ source/sass/blocks/index/page-main.scss          |   4 [32m+[m
+ source/sass/normalize.scss                       | 341 [31m-----------------------[m
+ source/sass/style.scss                           |   1 [31m-[m
+ 15 files changed, 19 insertions(+), 363 deletions(-)
+
+[33mcommit f278bd53746a1674b8cd580af92e6c0c95ef6290[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sat Apr 28 14:32:59 2018 +1000
+
+    Sass styles completed - v1.0
+
+ source/catalog.html                        | 19 [32m+++++++++++++[m[31m----[m
+ source/form.html                           | 34 [32m+++++++++++++++++[m[31m-------------[m
+ source/img/logo-mobile.svg                 |  1 [32m+[m
+ source/index.html                          | 17 [32m++++++++++[m[31m-----[m
+ source/sass/blocks/global/page-footer.scss | 15 [32m++++++++++++[m[31m-[m
+ 5 files changed, 61 insertions(+), 25 deletions(-)
+
+[33mcommit bbab5de6c51d233d0ac9ecaf0a1bab4e6a622af8[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Fri Apr 27 00:05:27 2018 +1000
+
+    SASS for catalog.html added - v0.8
+
+ source/catalog.html                              | 373 [32m++++++++++++[m[31m-----------[m
+ source/sass/blocks/catalog/button.scss           |  23 [32m++[m
+ source/sass/blocks/catalog/catalog-main.scss     |  13 [32m+[m
+ source/sass/blocks/catalog/catalog-products.scss |  92 [32m++++++[m
+ source/sass/blocks/catalog/specs_table.scss      |   0
+ source/sass/style.scss                           |   2 [32m+[m[31m-[m
+ 6 files changed, 330 insertions(+), 173 deletions(-)
+
+[33mcommit 95dcfe8b5c5562929aace08e5ff9fa39b037c281[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Wed Apr 25 22:26:52 2018 +1000
+
+    SASS for index.html added - v0.7
+
+ source/index.html                              | 22 [32m+++[m[31m----[m
+ source/sass/blocks/global/button.scss          |  0
+ source/sass/blocks/global/global-styles.scss   |  8 [32m+++[m
+ source/sass/blocks/global/main-navigation.scss | 15 [32m+++++[m
+ source/sass/blocks/global/page-footer.scss     | 45 [32m+++++++++++++[m
+ source/sass/blocks/global/site-list.scss       | 11 [32m++[m[31m--[m
+ source/sass/blocks/index/how-it-works.scss     | 91 [32m++++++++++++++++++++++++++[m
+ source/sass/blocks/index/main-intro.scss       | 60 [32m+++++++++++++++++[m
+ source/sass/blocks/index/programs.scss         | 75 [32m+++++++++++++++++++++[m
+ source/sass/style.scss                         |  1 [31m-[m
+ source/sass/variables.scss                     |  7 [32m+[m[31m-[m
+ 11 files changed, 317 insertions(+), 18 deletions(-)
+
+[33mcommit 2a9455b05f4e268dfdcfc87a423ac5323dc50994[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Sun Apr 22 23:25:17 2018 +1000
+
+    SCSS added - v0.5
+
+ package-lock.json                                | 905 [31m-----------------------[m
+ source/catalog.html                              |   1 [32m+[m
+ source/form.html                                 |   4 [32m+[m[31m-[m
+ source/img/logo-mobile.svg                       |   2 [32m+[m[31m-[m
+ source/index.html                                |  12 [32m+[m[31m-[m
+ source/sass/blocks/catalog/catalog-body.scss     |   0
+ source/sass/blocks/catalog/catalog-main.scss     |   0
+ source/sass/blocks/catalog/catalog-products.scss |   0
+ source/sass/blocks/catalog/specs_table.scss      |   0
+ source/sass/blocks/form/form-main.scss           |   0
+ source/sass/blocks/global/button.scss            |   0
+ source/sass/blocks/global/global-styles.scss     |  16 [32m+[m
+ source/sass/blocks/global/main-navigation.scss   |   4 [32m+[m
+ source/sass/blocks/global/page-footer.scss       |   0
+ source/sass/blocks/global/page-header.scss       |  12 [32m+[m
+ source/sass/blocks/global/site-list.scss         |  28 [32m+[m
+ source/sass/blocks/index/how-it-works.scss       |   0
+ source/sass/blocks/index/main-intro.scss         |   0
+ source/sass/blocks/index/page-main.scss          |   0
+ source/sass/blocks/index/programs.scss           |   0
+ source/sass/fonts.scss                           |  17 [32m+[m
+ source/sass/normalize.scss                       | 341 [32m+++++++++[m
+ source/sass/style.scss                           |  18 [32m+[m
+ source/sass/variables.scss                       |   9 [32m+[m
+ 24 files changed, 455 insertions(+), 914 deletions(-)
+
+[33mcommit 0891b78ad0bb3a2db5a787ec363f8647e2d2ead6[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Apr 19 16:35:11 2018 +0300
+
+    :kissing_cat: Добавляет сборку Sass на Gulp
+
+ gulpfile.js        |   32 [32m+[m
+ package-lock.json  | 6662 [32m++++++++++++++++++++++++++++++++++++++++++++++[m[31m------[m
+ package.json       |   23 [32m+[m[31m-[m
+ source/sass/README |   11 [32m+[m
+ 4 files changed, 5946 insertions(+), 782 deletions(-)
+
+[33mcommit eae85f50de20475013b89379f285ae3a25efe961[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Apr 19 16:35:01 2018 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+ source/fonts/oswaldmedium.woff            | Bin [31m0[m -> [32m25648[m bytes
+ source/fonts/oswaldmedium.woff2           | Bin [31m0[m -> [32m20620[m bytes
+ source/fonts/oswaldregular.woff           | Bin [31m0[m -> [32m25184[m bytes
+ source/fonts/oswaldregular.woff2          | Bin [31m0[m -> [32m20228[m bytes
+ source/img/advantage-clock@1x.png         | Bin [31m0[m -> [32m1717[m bytes
+ source/img/advantage-dining@1x.png        | Bin [31m0[m -> [32m1318[m bytes
+ source/img/advantage-leaf@1x.png          | Bin [31m0[m -> [32m1739[m bytes
+ source/img/advantage-powder@1x.png        | Bin [31m0[m -> [32m1695[m bytes
+ source/img/after-mobile@1x.png            | Bin [31m0[m -> [32m44345[m bytes
+ source/img/before-mobile@1x.png           | Bin [31m0[m -> [32m75701[m bytes
+ source/img/bg-map-mobile@1x.png           | Bin [31m0[m -> [32m110141[m bytes
+ source/img/buckwheat-big-mobile@1x.jpg    | Bin [31m0[m -> [32m9949[m bytes
+ source/img/buckwheat-small-mobile@1x.jpg  | Bin [31m0[m -> [32m7682[m bytes
+ source/img/chicken-big-mobile@1x.jpg      | Bin [31m0[m -> [32m9347[m bytes
+ source/img/chicken-small-mobile@1x.jpg    | Bin [31m0[m -> [32m7195[m bytes
+ source/img/fish-big-mobile@1x.jpg         | Bin [31m0[m -> [32m9233[m bytes
+ source/img/fish-small-mobile@1x.jpg       | Bin [31m0[m -> [32m7090[m bytes
+ source/img/gift-photo-mobile@1x.jpg       | Bin [31m0[m -> [32m12337[m bytes
+ source/img/icon-cat-pro.svg               |  26 [32m+++++++++++++++++++++[m
+ source/img/icon-cat-slim.svg              |  19 [32m++++++++++++++++[m
+ source/img/icon-close.svg                 |   5 [32m+++++[m
+ source/img/icon-fb-mobile.svg             |  10 [32m+++++++++[m
+ source/img/icon-gift.svg                  |  14 [32m++++++++++++[m
+ source/img/icon-insta-mobile.svg          |  14 [32m++++++++++++[m
+ source/img/icon-mail.svg                  |   5 [32m+++++[m
+ source/img/icon-mobile-menu.svg           |   7 [32m++++++[m
+ source/img/icon-phone.svg                 |  10 [32m+++++++++[m
+ source/img/icon-plus-mobile.svg           |  10 [32m+++++++++[m
+ source/img/icon-right-arrow-long.svg      |  10 [32m+++++++++[m
+ source/img/icon-tick.svg                  |   5 [32m+++++[m
+ source/img/icon-vk-mobile.svg             |  22 [32m++++++++++++++++++[m
+ source/img/index-background-mobile@1x.jpg | Bin [31m0[m -> [32m14110[m bytes
+ source/img/index-can-mobile@1x.png        | Bin [31m0[m -> [32m80007[m bytes
+ source/img/logo-footer.svg                |  34 [32m++++++++++++++++++++++++++++[m
+ source/img/logo-mobile.svg                |  36 [32m++++++++++++++++++++++++++++++[m
+ source/img/map-pin.png                    | Bin [31m0[m -> [32m7741[m bytes
+ source/img/rice-small-mobile@1x.jpg       | Bin [31m0[m -> [32m6818[m bytes
+ 37 files changed, 227 insertions(+)
+
+[33mcommit 30cfe4fca76c500fc35e732ce3a9e611fff1724b[m
+Merge: 26929cb 23c796c
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Thu Apr 19 16:26:05 2018 +0300
+
+    Merge pull request #6 from ventosae/module2-task1
+
+[33mcommit 23c796c560237bc1651d49a9c8efc6314ac8048a[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Thu Apr 19 21:59:56 2018 +1100
+
+    Commit Error Fixes
+
+ source/catalog.html | 50 [32m+++++++++++++++++++++++++[m[31m-------------------------[m
+ source/index.html   |  2 [32m+[m[31m-[m
+ 2 files changed, 26 insertions(+), 26 deletions(-)
+
+[33mcommit 761a66fd47944582ab941b7dba5a6e6ea5c9cce0[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Thu Apr 19 20:06:20 2018 +1100
+
+    Commit Error Fixes
+
+ source/index.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 6e9ae8267edbeb53e3315b2b45333a479af8df69[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Thu Apr 19 19:47:05 2018 +1100
+
+    Commit Error Fixes
+
+ source/index.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit bdefb6664ec8cf16a9ff36ba756e0024e3723558[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Wed Apr 18 22:22:28 2018 +1100
+
+    Remove duplicated file
+
+ source/catalog.html |  2 [32m+[m[31m-[m
+ source/form.html    |  2 [32m+[m[31m-[m
+ source/from.html    | 63 [31m-----------------------------------------------------[m
+ 3 files changed, 2 insertions(+), 65 deletions(-)
+
+[33mcommit 26929cb3c0851293c8823da4e264029617b0fe37[m
+Merge: 2c2b4ff 1e87e8b
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Apr 17 18:27:55 2018 +0300
+
+    Merge pull request #3 from ventosae/module2-task1
+
+[33mcommit 1e87e8bfd4d683ef4cae86e434646024b4bcf4dd[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Tue Apr 17 23:16:49 2018 +1100
+
+    Form minor changes
+
+ source/from.html | 63 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 63 insertions(+)
+
+[33mcommit 883a590920aabae648b68a15aecb2afbea28f2ff[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Tue Apr 17 23:13:01 2018 +1100
+
+    Form has been renamed
+
+ source/{from.html => form.html} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 6f1a0c14b1d3289e3418a71a3cc82dbe43b63ced[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Tue Apr 17 23:11:12 2018 +1100
+
+    BEM markup is done
+
+ source/catalog.html | 192 [32m++++++++++++++++++++++++++++++++++++++++++++[m[31m--------[m
+ source/from.html    |  63 [32m+++++++++++++++++[m
+ source/index.html   |  34 [32m+++++[m[31m-----[m
+ 3 files changed, 245 insertions(+), 44 deletions(-)
+
+[33mcommit 09bf6d5f16746f9c75fbeb94f2cf3b10b8d1ffb3[m
+Author: testsur <test@sur.com>
+Date:   Tue Apr 17 13:57:45 2018 +1000
+
+    BEM markup 0.7 added catalog.html
+
+ source/catalog.html | 87 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ source/index.html   |  4 [32m+[m[31m--[m
+ 2 files changed, 89 insertions(+), 2 deletions(-)
+
+[33mcommit 4b622ed3b25e8701a23007e55b580c48cea72e0d[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Tue Apr 17 00:35:45 2018 +1100
+
+    BEM markup 0.6 - finished with index.html
+
+ source/index.html | 30 [32m+++++++++++++++++++++++++++[m[31m---[m
+ 1 file changed, 27 insertions(+), 3 deletions(-)
+
+[33mcommit 6a1d79e0d3be3bd5f5c55ad9b885a1d4e16c70ed[m
+Author: testsur <test@sur.com>
+Date:   Mon Apr 16 14:00:27 2018 +1000
+
+    BEM markup v 0.5 - added some changes to the index.html
+
+ source/index.html | 20 [32m+++++++++++++++[m[31m-----[m
+ 1 file changed, 15 insertions(+), 5 deletions(-)
+
+[33mcommit 185b7d8915a38cec21b49b2af1346aec014fd036[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Mon Apr 16 01:17:02 2018 +1100
+
+    First Part of BEM for Index
+
+ source/index.html | 49 [32m+++++++++++++++++++++++++++++++++++++++++++++++[m[31m--[m
+ 1 file changed, 47 insertions(+), 2 deletions(-)
+
+[33mcommit 2c2b4ffe9f22b4f537bae4ca0e9f51e2ed0f0c9c[m
+Merge: 4ebc835 03f9e40
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sat Apr 14 16:28:57 2018 +0300
+
+    Merge pull request #2 from ventosae/module1-task1
+
+[33mcommit 03f9e40ffa6c21b2bb92b984dde3f1700d503428[m[33m ([m[1;31morigin/module1-task1[m[33m)[m
+Merge: 30550c9 4ebc835
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Fri Apr 13 20:56:52 2018 +1100
+
+    Merge branch 'master' into module1-task1
+
+[33mcommit 30550c9b7fd9df81140cd34d4ff6a335a6000b40[m[33m ([m[1;32mmodule1-task1[m[33m)[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Fri Apr 13 20:50:53 2018 +1100
+
+    Mentor's Name v2
+
+ Readme.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 4ebc835c86f19aa2fd63bee5ff7efdeb2e365764[m
+Merge: e253a03 daa7022
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Fri Apr 13 11:14:24 2018 +0300
+
+    Merge pull request #1 from ventosae/module1-task1
+
+[33mcommit daa70222d04865900da7d860256c563b879f471f[m
+Author: ventosae <anton.surov@hotmail.com>
+Date:   Fri Apr 13 01:18:43 2018 +1100
+
+    Mentor's Name
+
+ Readme.md | 5 [32m+++[m[31m--[m
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+[33mcommit e253a0397193a6d7b4bee674fb3bae53b2e4f6e3[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Apr 10 16:38:59 2018 +0300
+
+    :hatching_chick:
+
+ .editorconfig              |   22 [32m+[m
+ .gitattributes             |    8 [32m+[m
+ .gitignore                 |   11 [32m+[m
+ .stylelintrc               |    8 [32m+[m
+ .travis.yml                |    7 [32m+[m
+ Contributing.md            |   42 [32m+[m
+ Readme.md                  |   60 [32m+[m
+ package-lock.json          | 3707 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json               |   23 [32m+[m
+ source/css/README          |   16 [32m+[m
+ source/fonts/README        |    1 [32m+[m
+ source/img/README          |    5 [32m+[m
+ source/img/htmlacademy.svg |    1 [32m+[m
+ source/index.html          |   12 [32m+[m
+ source/js/README           |    9 [32m+[m
+ 15 files changed, 3932 insertions(+)

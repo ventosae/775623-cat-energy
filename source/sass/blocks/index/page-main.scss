@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 768px;
+    max-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -14,7 +14,7 @@
 
 @media (min-width: 1100px) {
   .page-main {
-    width: 1300px;
+    max-width: 1300px;
     padding-left: 105px;
     padding-right: 105px;
   }

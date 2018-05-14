@@ -1,9 +1,11 @@
 .programs {
   position: relative;
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
   list-style: none outside;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .programs--slim::after {
@@ -13,7 +15,7 @@
   height: 49px;
   top: 22px;
   left: 30px;
-  background: url("../../source/img/icon-cat-slim.svg") center no-repeat;
+  background: url("../img/icon-cat-slim.svg") center no-repeat;
 }
 
 .programs--pro::after {
@@ -22,7 +24,7 @@
   width: 67px;
   height: 28px;
   left: 13px;
-  background: url("../../source/img/icon-cat-pro.svg") center no-repeat;
+  background: url("../img/icon-cat-pro.svg") center no-repeat;
   z-index: 2;
 }
 
@@ -107,6 +109,7 @@
     width: 708px;
     max-width: 708px;
     margin-bottom: 55px;
+    padding: 0;
   }
 
   .programs__type {
