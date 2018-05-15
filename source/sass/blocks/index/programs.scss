@@ -1,11 +1,9 @@
 .programs {
+  @include mobile;
   position: relative;
-  max-width: 320px;
   margin: 0 auto;
   list-style: none outside;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .programs--slim::after {
@@ -105,11 +103,9 @@
 
 @media (min-width: $tablet-width) {
   .programs {
+    @include tablet;
     margin-top: 530px;
-    width: 708px;
-    max-width: 708px;
     margin-bottom: 55px;
-    padding: 0;
   }
 
   .programs__type {
@@ -196,9 +192,8 @@
 
 @media (min-width: 1100px) {
   .programs {
+    @include desktop;
     margin-top: 268px;
-    width: 1220px;
-    max-width: 1220px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 81px;

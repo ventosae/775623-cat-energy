@@ -1,8 +1,6 @@
 .example__wrapper {
-  max-width: 320px;
+  @include mobile;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .example {
@@ -144,13 +142,12 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    max-width: 708px;
+    @include tablet;
     margin: 0 auto;
-    padding: 0;
   }
 
   .example {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #ffffff 495px, transparent 495px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     padding: 0;
 
     &__header {
@@ -221,18 +218,8 @@
   .example__comaprison-wrapper {
     padding-top: 85px;
     z-index: 2;
-    background-color: $text-gray;
+    // background-color: $text-gray;
   }
-
-  // .example__wrapper::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 280px;
-  //   background-color: $text-gray;
-  //   left: 0;
-  //   bottom: 103px;
-  // }
 
   .example__before,
   .example__after,
@@ -244,13 +231,15 @@
 
 @media (min-width: 1100px) {
   .example__wrapper {
-    max-width: 1220px;
+    @include desktop;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
   }
 
   .example {
+    background: linear-gradient(to bottom, #ffffff 60px, transparent 60px), linear-gradient(to right, #f2f2f2 70%, #eaeaea 50%);
+
     &__header {
       padding-top: 70px;
       padding-bottom: 145px;
@@ -293,20 +282,5 @@
   .example__comaprison-wrapper {
     justify-content: flex-start;
     padding: 0;
-    background-color: $text-gray;
-  }
-
-  // .example__wrapper::before {
-  //   width: 100%;
-  //   height: 513px;
-  //   right: 0;
-  //   bottom: 131px;
-  //   content: "";
-  //   position: absolute;
-  //   background-color: $text-gray;
-  // }
-
-  .example__comaprison-wrapper::before {
-    display: none;
   }
 }
