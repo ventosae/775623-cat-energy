@@ -33,12 +33,17 @@
     </header>
 
     <main class="page-main">
+
       <section class="main-intro">
         <div class="main-intro__wrapper">
           <h1 class="main-intro__header">Функциональное питание для котов</h1>
           <h2 class="main-intro__motto">Занялся собой? Займись котом!</h2>
           <div class="main-intro__product">
-          <img class="main-intro__product-img" width="280" height="271" alt="Cat Energy Pro Курица" src="img/index-can-mobile@1x.png">
+            <picture class="main-intro__product-img">
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro Курица">
+            </picture>
           </div>
           <a class="main-intro__program-button" href="">Подобрать программу</a>
         </div>
@@ -55,6 +60,7 @@
           <a class="programs__link" href="#">Каталог Pro</a>
         </div>
       </section>
+
       <section class="how-it-works">
         <h3 class="how-it-works__header">Как это работает</h3>
         <ul class="how-it-works__list">
