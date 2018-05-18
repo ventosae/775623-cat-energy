@@ -16,3 +16,21 @@ $desktop-width: 1300px;
   padding: $padding;
   margin: $margin;
 }
+
+@mixin desktop($padding: 40px, $width: 1300px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  width: $width;
+}
+
+@mixin tablet($padding: 30px, $width: 768px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  width: $width;
+}
+
+@mixin mobile($padding: 20px, $width: 320px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  width: $width;
+}
