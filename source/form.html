@@ -28,9 +28,98 @@
       </nav>
     </header>
 
-
-    <main class="form-main">
-    <!-- to be continued  -->
+    <main class="programs">
+      <section class="programs__main">
+        <div class="programs__wrapper">
+          <h1 class="programs__header">Подбор программы</h1>
+          <p class="programs__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <form class="programs__form">
+            <div class="programs__wrapper programs__wrapper--fields">
+                <fieldset class="programs__fieldset programs__fieldset--selection">
+                  <legend class="visually-hidden">Введите информацию о вашем коте</legend>
+                  <ul compact="programs__list">
+                    <li class="programs__item">
+                      <label class="programs__label" for="name">Имя:*</label>
+                      <input class="programs__input" type="text" name="name" id="name" placeholder="Барсик" required>
+                    </li>
+                    <li class="programs__item">
+                      <label class="programs__label" for="weight">Вес(кг):*</label>
+                      <input class="programs__input" type="number" name="weight" id="weight" placeholder="7" required>
+                    </li>
+                    <li class="programs__item">
+                      <label class="programs__label" for="age">Возраст(лет):</label>
+                      <input class="programs__input" type="number" name="age" id="age" placeholder="7">
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="programs__fieldset programs__fieldset--golas">
+                  <legend class="programs__legend visually-hidden"> Выберите цель программы</legend>
+                  <ul compact="programs__list">
+                    <li class="programs__item">
+                      <input  class="programs__radio visually-hidden" type="radio" id="slim" name="goals" value="slim">
+                      <label class="programs__label programs__label--radio" for="slim">похудение</label>
+                    </li>
+                    <li class="programs__item">
+                      <input  class="programs__radio visually-hidden" type="radio" id="pro" name="goals" value="pro">
+                      <label class="programs__label programs__label--radio" for="pro">набор массы</label>
+                    </li>
+                    <li class="programs__item">
+                      <input  class="programs__radio visually-hidden" type="radio" id="advice" name="goals" value="advice">
+                      <label class="programs__label programs__label--radio" for="advice">не знаю (нужен ваш совет)</label>
+                    </li>
+                  </ul>
+                </fieldset>
+            </div>
+            <fieldset class="programs__fieldset programs__fieldset--contact">
+              <legend class="programs__legend programs-legend--contact">
+                Контактные данные (владельца кота)
+              </legend>
+              <ul class="programs__list">
+                <li class="programs__item">
+                  <label class="programs__label" for="email">e-mail:*</label>
+                  <input class="programs__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </li>
+                <li class="programs__item">
+                  <label class="programs__label" for="phone">телефон:*</label>
+                  <input class="programs__input" type="tel"  name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="programs__fieldset programs__fieldset--commet">
+              <legend class="programs__legend">
+                Комментарий
+              </legend>
+              <label class="visually-hidden" for="comment">расскажите о повадках вашего кота</label>
+              <textarea class="programs__comment" id="comment" name="comment" placeholder="расскажите обо всех повадках кота" ></textarea>
+            </fieldset>
+            <fieldset class="programs__fieldset programs__fieldset--additional">
+              <legend class="programs__legend"> Дополнительно</legend>
+              <ul class="programs__list programs__list--additional">
+                <li class="programs__item">
+                  <input class="programs__checkbox" type="checkbox" id="sweet" name="sweet" checked>
+                  <label class="programs__label" for="sweet">сахарозаменитель</label>
+                </li>
+                <li class="programs__item">
+                  <input class="programs__checkbox" type="checkbox" id="water" name="water">
+                  <label class="programs__label" for="water">питьевая вода</label>
+                </li>
+                <li class="programs__item">
+                  <input class="programs__checkbox" type="checkbox" id="milk" name="milk">
+                  <label class="programs__label" for="milk">молоко</label>
+                </li>
+                <li class="programs__item">
+                  <input class="programs__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                  <label class="programs__label" for="vitamins">витамины
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="programs__wrapper-button">
+              <button class="programs__button" type="submit" value="submit">отправить заявку</button>
+              <p class="programs__required">* — Обязательные поля</p>
+            </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
