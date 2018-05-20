@@ -1,0 +1,293 @@
+.form__body {
+  overflow: hidden;
+}
+
+.form,
+.form__main {
+  margin: 0 auto;
+}
+
+.form {
+  overflow: hidden;
+
+  &__header {
+    @include reset;
+    font-size: 36px;
+    line-height: 60px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: $black-text;
+    font-weight: 400;
+  }
+
+  &__description {
+    @include reset;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__form {
+    @include reset;
+    text-decoration: none;
+  }
+
+  &__fieldset {
+    @include reset;
+    border: none;
+    list-style: none;
+  }
+
+  &__list {
+    @include reset;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 14px;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    padding: 13px;
+    color: $text-color;
+    margin-left: 13px;
+    text-transform: uppercase;
+  }
+
+  &__input:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &__input:active {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+
+  &__input:focus {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+
+  &__fieldset--selection {
+    padding-bottom: 8px;
+  }
+
+  &__fieldset--golas {
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+  }
+
+  &__label--radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label--radio::before {
+    content: "";
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    transition: all 0.3s linear;
+    background-clip: content-box;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  &__radio:checked + &__label--radio::before {
+    padding: 8px;
+    background-color: rgb(104, 183, 56);
+  }
+
+  &__label--radio:active {
+    opacity: 0.3;
+  }
+
+  &__label--radio:hover::before {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &__fieldset--contact {
+    margin-top: 30px;
+  }
+
+  &__legend {
+    @include reset;
+    font-size: 24px;
+    line-height: 24px;
+    color: $black-text;
+    position: relative;
+    display: inline-flex;
+  }
+
+  &__legend--contact {
+    max-width: 181px;
+    padding-bottom: 31px;
+  }
+
+  &__legend::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: calc(100% + 22px);
+    width: 100vw;
+    height: 3px;
+    background-color: $text-green;
+  }
+
+  &__fieldset--commet {
+    margin-top: 31px;
+  }
+
+  &__comment {
+    @include reset;
+    width: 280px;
+    min-height: 150px;
+    margin-top: 35px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    resize: none;
+    padding: 13px;
+    margin-bottom: 10px;
+  }
+
+  &__comment:focus {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+
+
+  &__list--additional {
+    padding-top: 33px;
+    padding-bottom: 20px;
+  }
+
+  &__label-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label-checkbox::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    transition: all 0.3s linear;
+    background-clip: content-box;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  &__label-checkbox::after {
+    content: "";
+    display: none;
+    position: absolute;
+    background: url("../img/icon-tick.svg") no-repeat;
+    width: 21px;
+    height: 16px;
+    top: 7px;
+    left: 5px;
+  }
+
+  &__checkbox:checked + &__label-checkbox::after {
+    display: block;
+  }
+
+  &__label-checkbox:active {
+    opacity: 0.3;
+  }
+
+  &__label-checkbox:hover::before {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &__wrapper-button {
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    margin: auto;
+    width: 280px;
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: $text-green;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 23px;
+  }
+
+  &__button:hover {
+    background-color: $text-green--hover;
+  }
+
+  &__required {
+    @include reset;
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+input[id="email"] {
+  background: url("../img/icon-mail.svg") no-repeat;
+  background-size: 17px 13px;
+  background-position: right 15px center;
+}
+
+input[id="phone"] {
+  background: url("../img/icon-phone.svg") no-repeat;
+  background-size: 20px 20px;
+  background-position: right 13px center;
+}
+
+
+.form__main {
+  @include mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .form__main {
+    @include tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__main {
+    @include desktop;
+  }
+}
