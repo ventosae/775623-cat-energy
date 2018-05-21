@@ -1,10 +1,15 @@
 .form__body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .form,
 .form__main {
   margin: 0 auto;
+  transition: all 0.3s linear;
+}
+
+.form__main {
+  @include mobile;
 }
 
 .form {
@@ -276,18 +281,334 @@ input[id="phone"] {
 }
 
 
-.form__main {
-  @include mobile;
-}
-
 @media (min-width: $tablet-width) {
   .form__main {
     @include tablet;
+  }
+
+  .form {
+    &__header {
+      font-size: 60px;
+      line-height: 60px;
+      padding-top: 60px;
+      padding-bottom: 55px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 70px;
+      padding-left: 40px;
+    }
+
+    &__form {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px;
+      margin-left: 13px;
+      padding-left: 20px;
+    }
+
+    &__fieldset--selection {
+      padding-bottom: 50px;
+    }
+
+    &__fieldset--golas {
+      border: 1px solid rgba(205, 205, 205, 0.5);
+      padding-left: 30px;
+      padding-top: 35px;
+      padding-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__label--radio::before {
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      margin-right: 20px;
+    }
+
+    &__radio:checked + &__label--radio::before {
+      padding: 9px;
+    }
+
+    &__fieldset--contact {
+      margin-top: 60px;
+    }
+
+    &__legend {
+      @include reset;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__legend--contact {
+      max-width: 600px;
+      padding-bottom: 71px;
+    }
+
+    &__legend::after {
+      top: 21px;
+      left: calc(100% + 22px);
+    }
+
+    &__legend::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: calc(100% + 41px);
+      width: 100vw;
+      height: 3px;
+      background-color: $text-green;
+    }
+
+    &__fieldset--commet {
+      margin-top: 51px;
+    }
+
+    &__comment {
+      width: 631px;
+      min-height: 174px;
+      margin-top: 80px;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 20px;
+      margin-bottom: 70px;
+    }
+
+    &__list--additional {
+      padding-top: 53px;
+      padding-bottom: 53px;
+      display: flex;
+      flex-wrap: wrap;
+      jusify-content: space-between;
+      align-items: center;
+    }
+
+    &__list--additional > li {
+      width: 50%;
+    }
+
+    &__label-checkbox::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    &__label-checkbox::after {
+      width: 21px;
+      height: 16px;
+      top: 12px;
+      left: 10px;
+    }
+
+    &__wrapper-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 73px;
+      width: 495px;
+    }
+
+    &__button {
+      margin: 0;
+      width: 283px;
+      height: 52px;
+      padding: 0;
+      font-size: 20px;
+      line-height: 20px;
+      background-color: $text-green;
+    }
+
+    &__button:hover {
+      background-color: $text-green--hover;
+    }
+
+    &__required {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__main {
     @include desktop;
+  }
+
+ .form {
+    &__header {
+      font-size: 60px;
+      line-height: 60px;
+      padding-top: 60px;
+      padding-bottom: 55px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 70px;
+      padding-left: 40px;
+    }
+
+    &__form {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px;
+      margin-left: 13px;
+      padding-left: 20px;
+    }
+
+    &__fieldset--selection {
+      padding-bottom: 50px;
+    }
+
+    &__fieldset--golas {
+      border: 1px solid rgba(205, 205, 205, 0.5);
+      padding-left: 30px;
+      padding-top: 35px;
+      padding-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__label--radio::before {
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      margin-right: 20px;
+    }
+
+    &__radio:checked + &__label--radio::before {
+      padding: 9px;
+    }
+
+    &__fieldset--contact {
+      margin-top: 60px;
+    }
+
+    &__legend {
+      @include reset;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__legend--contact {
+      max-width: 600px;
+      padding-bottom: 71px;
+    }
+
+    &__legend::after {
+      top: 21px;
+      left: calc(100% + 22px);
+    }
+
+    &__legend::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: calc(100% + 41px);
+      width: 100vw;
+      height: 3px;
+      background-color: $text-green;
+    }
+
+    &__fieldset--commet {
+      margin-top: 51px;
+    }
+
+    &__comment {
+      width: 631px;
+      min-height: 174px;
+      margin-top: 80px;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 20px;
+      margin-bottom: 70px;
+    }
+
+    &__list--additional {
+      padding-top: 53px;
+      padding-bottom: 53px;
+      display: flex;
+      flex-wrap: wrap;
+      jusify-content: space-between;
+      align-items: center;
+    }
+
+    &__list--additional > li {
+      width: 50%;
+    }
+
+    &__label-checkbox::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    &__label-checkbox::after {
+      width: 21px;
+      height: 16px;
+      top: 12px;
+      left: 10px;
+    }
+
+    &__wrapper-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 73px;
+      width: 495px;
+    }
+
+    &__button {
+      margin: 0;
+      width: 283px;
+      height: 52px;
+      padding: 0;
+      font-size: 20px;
+      line-height: 20px;
+      background-color: $text-green;
+    }
+
+    &__button:hover {
+      background-color: $text-green--hover;
+    }
+
+    &__required {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }
