@@ -19,8 +19,8 @@
     @include reset;
     font-size: 36px;
     line-height: 60px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 25px;
     color: $black-text;
     font-weight: 400;
   }
@@ -52,7 +52,7 @@
   &__item {
     display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
     align-items: center;
   }
 
@@ -91,12 +91,17 @@
     padding-bottom: 8px;
   }
 
+  &__fieldset--selection > ul > li:nth-child(2) > input,
+  &__fieldset--selection > ul > li:nth-child(3) > input {
+    margin-left: 21px;
+  }
+
   &__fieldset--golas {
     border: 1px solid rgba(205, 205, 205, 0.5);
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 6px;
   }
 
@@ -150,7 +155,7 @@
 
   &__legend--contact {
     max-width: 181px;
-    padding-bottom: 31px;
+    padding-bottom: 35px;
   }
 
   &__legend::after {
@@ -164,7 +169,8 @@
   }
 
   &__fieldset--commet {
-    margin-top: 31px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   &__comment {
@@ -189,7 +195,7 @@
 
   &__list--additional {
     padding-top: 33px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   &__label-checkbox {
@@ -235,7 +241,7 @@
   }
 
   &__wrapper-button {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   &__button {
@@ -243,8 +249,8 @@
     width: 280px;
     height: 40px;
     padding: 0;
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
     background-color: $text-green;
     text-align: center;
     text-transform: uppercase;
@@ -252,7 +258,7 @@
     border: none;
     color: #ffffff;
     cursor: pointer;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &__button:hover {
@@ -452,70 +458,54 @@ input[id="phone"] {
     @include desktop;
   }
 
- .form {
+  .form {
     &__header {
       font-size: 60px;
       line-height: 60px;
-      padding-top: 60px;
+      padding-top: 80px;
       padding-bottom: 55px;
     }
 
     &__description {
-      font-size: 20px;
-      line-height: 30px;
       padding-bottom: 70px;
-      padding-left: 40px;
+      padding-left: 0;
     }
 
     &__form {
-      padding-left: 40px;
-      padding-right: 35px;
-    }
-
-    &__item {
-      padding-bottom: 20px;
-    }
-
-    &__label {
-      font-size: 20px;
-      line-height: 20px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__input {
-      font-size: 20px;
       line-height: 20px;
-      padding: 16px;
-      margin-left: 13px;
-      padding-left: 20px;
+      max-height: 52px;
     }
 
-    &__fieldset--selection {
-      padding-bottom: 50px;
+    &__wrapper--fields {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrapper--fields > fieldset {
+      margin: 0;
+      width: 570px;
+      max-height: 196px;
     }
 
     &__fieldset--golas {
-      border: 1px solid rgba(205, 205, 205, 0.5);
-      padding-left: 30px;
-      padding-top: 35px;
-      padding-bottom: 15px;
-      margin-left: auto;
-      margin-right: auto;
+      padding-left: 45px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      height: auto;
+      min-height: auto;
     }
 
-    &__label--radio::before {
-      min-width: 40px;
-      min-height: 40px;
-      max-width: 40px;
-      max-height: 40px;
-      margin-right: 20px;
-    }
-
-    &__radio:checked + &__label--radio::before {
-      padding: 9px;
+    &__list--goals > li {
+      padding-bottom: 13px;
     }
 
     &__fieldset--contact {
-      margin-top: 60px;
+      margin-top: 80px;
     }
 
     &__legend {
@@ -525,90 +515,56 @@ input[id="phone"] {
     }
 
     &__legend--contact {
-      max-width: 600px;
       padding-bottom: 71px;
     }
 
+    &__fieldset--contact > ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__fieldset--contact > ul > li {
+      display: flex;
+      flex-basis: 570px;
+    }
+
     &__legend::after {
-      top: 21px;
-      left: calc(100% + 22px);
+      left: calc(100% + 45px);
     }
 
     &__legend::before {
-      content: "";
-      position: absolute;
-      top: 21px;
       right: calc(100% + 41px);
-      width: 100vw;
-      height: 3px;
-      background-color: $text-green;
     }
 
     &__fieldset--commet {
-      margin-top: 51px;
+      margin-top: 75px;
     }
 
     &__comment {
-      width: 631px;
+      width: 1220px;
       min-height: 174px;
-      margin-top: 80px;
-      font-size: 20px;
-      line-height: 30px;
-      padding: 20px;
-      margin-bottom: 70px;
+      margin-top: 73px;
     }
 
     &__list--additional {
       padding-top: 53px;
-      padding-bottom: 53px;
-      display: flex;
-      flex-wrap: wrap;
-      jusify-content: space-between;
-      align-items: center;
+      padding-bottom: 60px;
     }
 
     &__list--additional > li {
-      width: 50%;
-    }
-
-    &__label-checkbox::before {
-      width: 40px;
-      height: 40px;
-      margin-right: 20px;
-    }
-
-    &__label-checkbox::after {
-      width: 21px;
-      height: 16px;
-      top: 12px;
-      left: 10px;
+      width: 25%;
     }
 
     &__wrapper-button {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 73px;
-      width: 495px;
+      margin-bottom: 80px;
+      width: 790px;
     }
 
     &__button {
-      margin: 0;
-      width: 283px;
-      height: 52px;
-      padding: 0;
-      font-size: 20px;
-      line-height: 20px;
-      background-color: $text-green;
-    }
-
-    &__button:hover {
-      background-color: $text-green--hover;
-    }
-
-    &__required {
-      font-size: 16px;
-      line-height: 16px;
+      width: 568px;
     }
   }
 }
