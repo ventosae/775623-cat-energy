@@ -71,6 +71,28 @@
   width: 208px;
 }
 
+.page-footer__img {
+  width: 22px;
+  height: 12px;
+}
+
+.page-footer__img:hover use,
+.page-footer__img:active use,
+.page-footer__img:focus use {
+  fill: $text-green--hover;
+}
+
+.page-footer__img--insta,
+.page-footer__img--fb {
+  width: 16px;
+  height: 16px;
+}
+
+.page-footer__img--fb {
+  width: 10px;
+  height: 19px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 60px 30px 60px 30px;

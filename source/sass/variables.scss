@@ -10,6 +10,8 @@ $oswald-font: "Oswald", arial, helvetica, sans-serif;
 $oswald-medium-font: "Oswald Medium", arial, helvetica, sans-serif;
 $tablet-width: 768px;
 $desktop-width: 1300px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 
 @mixin reset($padding: 0, $margin: 0) {

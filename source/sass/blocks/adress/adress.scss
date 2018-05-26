@@ -51,6 +51,18 @@
   }
 }
 
+.adress__wrapper--gray {
+  background: linear-gradient(to bottom, #f2f2f2 115px, transparent 115px);
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #f2f2f2 205px, transparent 205px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .adress {
     &__wrapper {
@@ -59,7 +71,7 @@
 
     &__box {
       @include tablet;
-      padding-top: 85px;
+      padding-top: 65px;
       padding-bottom: 50px;
     }
 

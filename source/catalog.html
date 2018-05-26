@@ -11,7 +11,11 @@
 
     <header class="page-header">
       <a class="page-header__logo-pic" href="index.html">
-      <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" >
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" >
+        <img class="page-header__logo-img" width="192" height="38" alt="Cat Energy Logo" src="img/logo-mobile.svg">
+      </picture>
       </a>
       <nav class="main-navigation">
         <!-- <div class="center-wrapper"><button class="main-navigation__toggle" type="button">Открыть Меню</button></div> -->
