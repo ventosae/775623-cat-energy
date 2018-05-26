@@ -63,6 +63,14 @@
   }
 }
 
+
+@media (min-resolution: 1.5dppx) {
+  .main-intro {
+    background: url("../img/index-background-mobile@2x.jpg") top no-repeat;
+    background-size: 320px auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-intro {
     background: none;
@@ -151,18 +159,21 @@
     position: absolute;
   }
 
-  .main-intro__product::after {
+  .main-intro__wrapper::before {
     position: absolute;
     z-index: -1;
     top: -118px;
-    right: -110px;
-    display: block;
-    width: 720px;
+    width: 50%;
     height: 696px;
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     content: " ";
-    background-color: #68b738;
-    background-size: cover;
+    background-color: #64a83b;
+    left: 50%;
+
+    @media (min-resolution: 1.5dppx) {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat;
+      background-size: 720px auto;
+    }
   }
 
   .main-intro__product::before {
