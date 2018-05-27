@@ -87,6 +87,21 @@
     outline: 1px solid #444444;
   }
 
+  input:not(:placeholder-shown):invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
+  // &__input:invalid {
+  //   border: 1px solid #ff8282;
+  //   outline: 1px solid #ff8282;
+  // }
+
+  &__input--invalid:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
   &__fieldset--selection {
     padding-bottom: 8px;
   }
@@ -191,7 +206,6 @@
     border: 1px solid #444444;
     outline: 1px solid #444444;
   }
-
 
   &__list--additional {
     padding-top: 33px;
