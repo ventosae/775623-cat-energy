@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background: linear-gradient(to bottom, $text-gray 115px, transparent 115px);
   }
 
   &__box {
@@ -46,7 +47,7 @@
     position: absolute;
     z-index: 1;
     background-size: cover;
-    top: 180px;
+    top: 140px;
     left: 125px;
   }
 }
@@ -67,6 +68,7 @@
   .adress {
     &__wrapper {
       margin: 0 auto;
+      background: linear-gradient(to bottom, $text-gray 205px, transparent 205px);
     }
 
     &__box {
