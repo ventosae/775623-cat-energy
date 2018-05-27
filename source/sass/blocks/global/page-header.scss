@@ -6,6 +6,7 @@
   margin-right: auto;
   max-width: 320px;
   align-items: center;
+  transition: all 0.3s linear;
 
 
   &__logo-pic {
@@ -26,24 +27,16 @@
   }
 
   &__toggle {
-    height: 38px;
+    width: 24px;
+    height: 18px;
     cursor: pointer;
     border: none;
     order: 2;
-    background-color: #ffffff;
+    background: url("../img/icon-mobile-menu.svg") no-repeat;
   }
 }
 
 .page-header__toggle--closed {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 18px;
-  background: url("../img/icon-mobile-menu.svg") no-repeat;
-}
-
-.page-header__toggle--open {
-  content: "";
   display: block;
   width: 24px;
   height: 18px;
@@ -79,7 +72,7 @@
       display: none;
     }
 
-    &__toggle--open {
+    &__toggle {
       display: none;
     }
   }

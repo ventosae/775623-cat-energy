@@ -1,0 +1,34 @@
+var hamburgerBtn = document.querySelector(".page-header__toggle");
+var pageHeaderNav = document.querySelector(".main-navigation");
+
+pageHeaderNav.classList.remove("main-navigation--open");
+
+hamburgerBtn.addEventListener("click", function () {
+  pageHeaderNav.classList.toggle("main-navigation--open");
+  hamburgerBtn.classList.toggle("page-header__toggle--closed");
+});
+
+if(document.addEventListener){
+    document.addEventListener('invalid', function(e){
+        e.target.className += ' form__input--invalid';
+    }, true);
+}
+
+var divisor = document.getElementsByClassName("example__slim")[0],
+slider = document.getElementById("slider");
+function moveDivisor() {
+  divisor.style.width = slider.value+"%";
+}
+
+var beforeBtn = document.querySelector(".example__toggle--before");
+var afterBtn = document.querySelector(".example__toggle--after");
+
+beforeBtn.addEventListener("click", function () {
+  divisor.style.width = "0%";
+  slider.value = 0
+});
+
+afterBtn.addEventListener("click", function () {
+  divisor.style.width = "100%";
+  slider.value = 100
+});
