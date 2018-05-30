@@ -10,8 +10,8 @@
 
 
   &__logo-pic {
-    display: flex; /* new */
-    align-items: center; /* new */
+    display: flex;
+    align-items: center;
   }
 
   &__wrapper {
@@ -19,7 +19,7 @@
     display: flex;
     width: 100%;
     border-bottom: 1px solid $gray-line;
-    min-height: 66px; /* new */
+    min-height: 66px;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
@@ -78,7 +78,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .page-header {
     padding-left: 40px;
     padding-right: 40px;

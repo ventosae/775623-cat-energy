@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .page-footer-wraper {
     max-width: 1220px;
   }
