@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet" title="Main Style">
     <title>Каталог Продукции | Cat Energy 🐱</title>
   </head>
-  <body class="catalog-body">
+  <body class="catalog-main__body">
 
   <svg style="display: none;">
     <symbol viewBox="0 0 22 12" id="icon-vk-mobile">
@@ -62,13 +62,13 @@
       <nav class="main-navigation">
         <ul class="site-list ">
           <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
+            <a class="site-list__link" href="/index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--index" href="/catalog.html">Каталог Продукции</a>
+            <a class="site-list__link site-list__link--active" href="#">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--index" href="/form.html">Подбор Программы</a>
+            <a class="site-list__link" href="/form.html">Подбор Программы</a>
           </li>
         </ul>
       </nav>
@@ -81,7 +81,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product" id="pro">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Курица 500г">
+            <picture class="catalog-product__img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+ -->
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img nsrc="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Курица 500г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -107,7 +115,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Курица 500г">
+            <picture class="catalog-product__img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy Курица 1000г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -133,7 +149,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Рыба 500г">
+              <picture class="catalog-product__img">
+<!--                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x"> -->
+
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy Рыба 500г">
+              </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -158,8 +182,16 @@
         </li>
         <li class="catalog-product__item">
           <article class="catalog-product">
-            <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Рыба 1000г">
+            <a class="catalog-product__img" href="#">
+            <picture class="goods-item__picture">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Рыба 1000г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -185,7 +217,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product" id="slim">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500г">
+            <picture class="catalog-product__img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim Гречка 500г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -211,7 +251,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy Slim 1000г">
+            <picture class="catalog-product__img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="goods-item__img" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -237,7 +285,15 @@
         <li class="catalog-product__item">
           <article class="catalog-product">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__img" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Рис 500г">
+            <picture class="catalog-product__img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="goods-item__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim Рис 500г">
+            </picture>
             </a>
             <div class="catalog-product__name-wrapper">
               <a class="catalog-product__link" href="#">
@@ -325,43 +381,53 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="adress__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy Карта - Адрес - ул.Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
+            <iframe class="adress__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5923023606017!2d30.32143105819938!3d59.93890704283451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sau!4v1527956850184" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
     </section>
   </main>
 
     <footer class="page-footer">
-      <div class="page-footer-wraper">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo-name" href="index.html">
-        <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
+        <img width="128" height="24" alt="Cat Energy" src="img/logo-footer.svg">
         </a>
         <div class="page-footer__social">
         <ul class="page-footer__links">
         <li class="page-footer__item">
-          <a class="page-footer_link page-footer_link--vk" href="#">
-            <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg">
+          <a class="page-footer__link page-footer__link--vk" href="#">
+
+          <svg class="page-footer__img page-footer__img--vk" width="100%" height="100%" viewBox="0 0 22 12">
+            <use xlink:href="#icon-vk-mobile" fill="#666666"></use>
+          </svg>
           </a>
         </li>
         <li class="page-footer__item">
-          <a class="page-footer_link page-footer_link--instagram" href="#">
-            <img width="20px" height="20px"  alt="Html Academy Грам" src="img/icon-insta-mobile.svg">
+          <a class="page-footer__link page-footer__link--instagram" href="#">
+          <svg class="page-footer__img page-footer__img--insta" width="100%" height="100%">
+            <use xlink:href="#icon-insta-mobile" fill="#666666"></use>
+          </svg>
           </a>
         </li>
         <li class="page-footer__item">
-          <a class="page-footer_link page-footer_link--facebook" href="#">
-            <img width="20px" height="20px" alt="Html Academy Фейсбуша" src="img/icon-fb-mobile.svg">
+          <a class="page-footer__link page-footer__link--facebook" href="#">
+          <svg class="page-footer__img page-footer__img--fb" width="100%" height="100%">
+            <use xlink:href="#icon-fb-mobile" fill="#666666"></use>
+          </svg>
           </a>
         </li>
         </ul>
         </div>
         <div class="footer-copyright">
-          <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
-            <span class="footer-copyright__text">HTML Academy</span>
-            <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/profile/id775623">
+            <span class="page-footer__copyright-text">HTML Academy</span>
+            <img width="20px" height="20px"  class="page-footer__copyright-img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
           </a>
       </div>
     </footer>
     <script src="js/javascripts.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>
   </body>

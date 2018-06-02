@@ -1,3 +1,8 @@
+.catalog-main__body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
 .catalog-main {
   overflow: hidden;
 }
@@ -25,7 +30,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .catalog-main__header {
     padding-top: 85px;
   }

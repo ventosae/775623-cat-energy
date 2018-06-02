@@ -47,7 +47,7 @@
 }
 
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .button {
     width: 169px;
   }
