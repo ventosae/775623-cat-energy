@@ -1,6 +1,7 @@
 .how-it-works {
   @include mobile;
   margin: 0 auto;
+  transition: all 0.3s ease-out;
 }
 
 .how-it-works__header {
@@ -204,7 +205,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .how-it-works__item {
     margin-bottom: 55px;
     width: 245px;

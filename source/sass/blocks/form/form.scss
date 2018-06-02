@@ -1,11 +1,12 @@
 .form__body {
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 .form,
 .form__main {
   margin: 0 auto;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-out;
 }
 
 .form__main {
@@ -47,6 +48,7 @@
 
   &__list {
     @include reset;
+    position: relative;
   }
 
   &__item {
@@ -71,6 +73,7 @@
     color: $text-color;
     margin-left: 13px;
     text-transform: uppercase;
+    background-color: #ffffff;
   }
 
   &__input:hover {
@@ -85,6 +88,16 @@
   &__input:focus {
     border: 1px solid #444444;
     outline: 1px solid #444444;
+  }
+
+  input:not(:placeholder-shown):invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
+  &__input--invalid:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
   }
 
   &__fieldset--selection {
@@ -168,7 +181,7 @@
     background-color: $text-green;
   }
 
-  &__fieldset--commet {
+  &__fieldset--commnet {
     margin-top: 15px;
     margin-bottom: 10px;
   }
@@ -185,6 +198,7 @@
     resize: none;
     padding: 13px;
     margin-bottom: 10px;
+    background-color: #ffffff;
   }
 
   &__comment:focus {
@@ -192,19 +206,18 @@
     outline: 1px solid #444444;
   }
 
-
   &__list--additional {
     padding-top: 33px;
     padding-bottom: 25px;
   }
 
-  &__label-checkbox {
+  &__label--checkbox {
     position: relative;
     display: flex;
     align-items: center;
   }
 
-  &__label-checkbox::before {
+  &__label--checkbox::before {
     content: "";
     display: block;
     width: 30px;
@@ -217,7 +230,8 @@
     margin-right: 15px;
   }
 
-  &__label-checkbox::after {
+  &__label--checkbox::after {
+    @include element-color(#68b738);
     content: "";
     display: none;
     position: absolute;
@@ -228,15 +242,15 @@
     left: 5px;
   }
 
-  &__checkbox:checked + &__label-checkbox::after {
+  &__checkbox:checked + &__label--checkbox::after {
     display: block;
   }
 
-  &__label-checkbox:active {
+  &__label--checkbox:active {
     opacity: 0.3;
   }
 
-  &__label-checkbox:hover::before {
+  &__label--checkbox:hover::before {
     border: 1px solid rgba(205, 205, 205, 1);
   }
 
@@ -274,18 +288,27 @@
   }
 }
 
-input[id="email"] {
-  background: url("../img/icon-mail.svg") no-repeat;
-  background-size: 17px 13px;
-  background-position: right 15px center;
+.form__icon {
+  position: absolute;
 }
 
-input[id="phone"] {
-  background: url("../img/icon-phone.svg") no-repeat;
-  background-size: 20px 20px;
-  background-position: right 13px center;
+.form__icon--mail {
+  width: 17px;
+  height: 13px;
+  right: 15px;
+  top: 17px;
 }
 
+.form__icon--phone {
+  width: 20px;
+  height: 20px;
+  right: 12px;
+  bottom: 25px;
+}
+
+.form__input:focus + .form__icon use {
+  fill: $text-green;
+}
 
 @media (min-width: $tablet-width) {
   .form__main {
@@ -384,7 +407,7 @@ input[id="phone"] {
       background-color: $text-green;
     }
 
-    &__fieldset--commet {
+    &__fieldset--comment {
       margin-top: 51px;
     }
 
@@ -411,13 +434,13 @@ input[id="phone"] {
       width: 50%;
     }
 
-    &__label-checkbox::before {
+    &__label--checkbox::before {
       width: 40px;
       height: 40px;
       margin-right: 20px;
     }
 
-    &__label-checkbox::after {
+    &__label--checkbox::after {
       width: 21px;
       height: 16px;
       top: 12px;
@@ -451,7 +474,18 @@ input[id="phone"] {
       line-height: 16px;
     }
   }
+
+  .form__icon--mail {
+    right: 20px;
+    top: 25px;
+  }
+
+  .form__icon--phone {
+    right: 17px;
+    bottom: 40px;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .form__main {
@@ -536,7 +570,7 @@ input[id="phone"] {
       right: calc(100% + 41px);
     }
 
-    &__fieldset--commet {
+    &__fieldset--comment {
       margin-top: 75px;
     }
 
@@ -566,5 +600,16 @@ input[id="phone"] {
     &__button {
       width: 568px;
     }
+  }
+
+  .form__icon--mail {
+    left: 533px;
+    right: 0;
+    top: 20px;
+  }
+
+  .form__icon--phone {
+    right: 18px;
+    top: 16px;
   }
 }

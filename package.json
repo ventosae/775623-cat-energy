@@ -12,14 +12,17 @@
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-rename": "^1.2.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp style",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",

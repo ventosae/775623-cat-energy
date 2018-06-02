@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet" title="Main Style">
     <title>Cat Energy 🐱 - Функциональное Питание для Котов</title>
   </head>
-  <body class="page-body__index" >
+  <body class="page-main__body" >
 
   <svg style="display: none;">
     <symbol viewBox="0 0 22 12" id="icon-vk-mobile">
@@ -46,11 +46,14 @@
         H1.1v2.3h2V18z"/>
       </g>
     </symbol>
+    <symbol id="htmlacademy" viewBox="10 10 40 40">
+    <path  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+    </symbol>
   </svg>
 
     <header class="page-header">
       <div class="page-header__wrapper" >
-        <button class="page-header__toggle page-header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="page-header__logo-pic" href="index.html">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" >
@@ -59,8 +62,7 @@
       </picture>
         </a>
       </div>
-
-      <nav class="main-navigation main-navigation--open main-navigation--closed ">
+      <nav class="main-navigation">
         <ul class="site-list ">
           <li class="site-list__item ">
             <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
@@ -83,24 +85,28 @@
           <h2 class="main-intro__motto">Занялся собой? Займись котом!</h2>
           <div class="main-intro__product">
             <picture class="main-intro__product-img">
+<!--               <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.png 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp  2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x"> -->
+
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
               <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro Курица">
             </picture>
           </div>
-          <a class="main-intro__program-button" href="">Подобрать программу</a>
+          <a class="main-intro__program-button" href="/form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="programs">
         <div class="programs__type programs__type--slim">
           <h3 class="programs__header programs--slim">Похудение</h3>
           <p class="programs__description programs__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link s" href="#">Каталог Slim</a>
+          <a class="programs__link" href="catalog.html#slim">Каталог Slim</a>
         </div>
         <div class="programs__type ">
           <h3 class="programs__header programs--pro">Набор Массы</h3>
           <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link" href="#">Каталог Pro</a>
+          <a class="programs__link" href="catalog.html#pro">Каталог Pro</a>
         </div>
       </section>
 
@@ -136,12 +142,15 @@
 
               </div>
               <div class="example__comaprison-wrapper">
-                  <img class="example__img" atl="Пухлый кот, до Cat Energy" width="311" height="232" src="img/before-mobile@1x.png"">
-                  <img class="example__img" atl="Похудевший кот, после Cat Energy" src="">
+                  <div class="example__comaprison-wrapper--fig">
+                    <figure class="example__fat">
+                      <div class="example__slim"></div>
+                  </div>
+                  </figure>
                   <div class="example__toggle">
-                    <p class="example__before">Было</p>
-                    <div class="example__before-after-toggle"></div>
-                    <p class="example__after">Стало</p>
+                    <button class="example__toggle--before" type="button"><p class="example__before">Было</p></button>
+                    <input class="example__input" type="range" min="0" max="100" value="50" id="slider" onchange="moveDivisor() "oninput="moveDivisor()">
+                    <button class="example__toggle--after" type="button"><p class="example__after">Стало</p> </button>
                   </div>
               </div>
           </div>
@@ -156,26 +165,29 @@
 
             <div class="adress__map">
               <picture class="adress__picture">
+<!--                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"> -->
+
                 <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
                 <img class="adress__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy Карта - Адрес - ул.Большая Конюшенная, д. 19/8 Санкт-Петербург">
               </picture>
+              <iframe class="adress__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5923023606017!2d30.32143105819938!3d59.93890704283451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sau!4v1527956850184" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-
           </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-wraper ">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo-name" href="index.html">
-        <img width="130" height="26" alt="Cat Energy" src="img/logo-footer.svg">
+        <img width="128" height="24" alt="Cat Energy" src="img/logo-footer.svg">
         </a>
         <div class="page-footer__social">
         <ul class="page-footer__links">
         <li class="page-footer__item">
           <a class="page-footer__link page-footer__link--vk" href="#">
-<!--             <img alt="Html Academy Вконтактике" src="img/icon-vk-mobile.svg"> -->
 
           <svg class="page-footer__img page-footer__img--vk" width="100%" height="100%" viewBox="0 0 22 12">
             <use xlink:href="#icon-vk-mobile" fill="#666666"></use>
@@ -199,13 +211,16 @@
         </ul>
         </div>
         <div class="footer-copyright">
-          <a class="footer-copyright__link" href="https://htmlacademy.ru/profile/id775623">
-            <span class="footer-copyright__text">HTML Academy</span>
-            <img width="20px" height="20px"  class="footer-copyright__img" alt="Code Academy" width="27" height="34" src="img/htmlacademy.svg">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/profile/id775623">
+            <span class="page-footer__copyright-text">HTML Academy</span>
+            <svg class="page-footer__copyright-img" width="27px" height="34px">
+              <use xlink:href="#htmlacademy" ></use>
+            </svg>
           </a>
       </div>
     </footer>
-  </body>
-</html>
+    <script src="js/javascripts.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

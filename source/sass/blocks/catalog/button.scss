@@ -19,8 +19,7 @@
   }
 
   &:active {
-    color: $gray-line;
-    background-color: $text-gray;
+    color: rgba(205, 205, 205, 0.3);
   }
 }
 
@@ -30,9 +29,12 @@
 
   &:hover,
   &:focus {
-    background-color: $text-gray;
-    opacity: 0.8;
-    color: $text-green--hover;
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
   }
 }
 
@@ -45,7 +47,7 @@
 }
 
 
-@media (min-width: 1100px) {
+@media (min-width: $desktop-width) {
   .button {
     width: 169px;
   }

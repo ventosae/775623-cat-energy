@@ -1,12 +1,19 @@
 .main-navigation {
-  display: flex;
+  display: none;
   margin: auto;
   box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.main-navigation--open {
+  display: flex;
+  transition: all 0.3s linear;
 }
 
 @media (min-width: $tablet-width) {
   .main-navigation {
     margin: 0;
     padding: 0;
+    display: flex;
   }
 }
