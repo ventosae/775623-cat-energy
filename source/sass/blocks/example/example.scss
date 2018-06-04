@@ -33,6 +33,12 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  &--description {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+  }
 }
 
 .example__feature-box {
@@ -98,11 +104,11 @@
   justify-content: space-between;
   width: 280px;
   height: 300px;
-}
 
-.example__comaprison-wrapper--fig {
-  width: 100%;
-  height: 245px;
+  &--fig {
+    width: 100%;
+    height: 245px;
+  }
 }
 
 .example__fat {
@@ -143,7 +149,6 @@
     background-color: $text-gray;
   }
 }
-
 
 input[type="range"] {
   @include reset;
@@ -278,14 +283,9 @@ input[type="range"]::-ms-tooltip {
   left: 5px;
 }
 
-.example__feature-wrapper--description {
-  display: flex;
-  width: 340px;
-  justify-content: space-between;
-}
 
-.example__toggle--after,
-.example__toggle--before {
+.example__toggle-after,
+.example__toggle-before {
   @include reset;
   text-decoration: none;
   border: none;
@@ -296,7 +296,6 @@ input[type="range"]::-ms-tooltip {
 .example__slim--hide {
   width: 0%;
 }
-
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
@@ -377,11 +376,14 @@ input[type="range"]::-ms-tooltip {
     z-index: 2;
     width: 708px;
     height: 650px;
-  }
 
-  .example__comaprison-wrapper--fig {
-    width: 100%;
-    height: auto;
+    &--fig {
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+      z-index: 2;
+      display: block;
+    }
   }
 
   .example__toggle {
@@ -406,11 +408,11 @@ input[type="range"]::-ms-tooltip {
 
   .example__slim {
     bottom: 0;
-    background-size: "690px 517px";
-    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 51.3%, #eaeaea 51.3%);
+    background-size: 690px 517px;
+    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 51.3%, #eaeaea 51.3%);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
       background-size: 690px 517px;
     }
   }
@@ -510,7 +512,6 @@ input[type="range"]::-ms-tooltip {
       inset 0 0 0 12px rgb(255, 255, 255),
       0 4px 5px rgba(0, 0, 0, 0.25);
   }
-
 
   input[type="range"]::-ms-track {
     width: 428px;
@@ -651,10 +652,11 @@ input[type="range"]::-ms-tooltip {
   .example__feature-wrapper {
     flex-direction: column;
     z-index: 2;
-  }
 
-  .example_feature-wrapper-description {
-    width: 365px;
+    &--description {
+      width: 365px;
+      flex-direction: row;
+    }
   }
 
   .example__value {
@@ -667,10 +669,11 @@ input[type="range"]::-ms-tooltip {
     width: 650px;
     height: 650px;
     align-items: flex-end;
-  }
 
-  .example__comaprison-wrapper-fig {
-    margin-top: 15px;
+    &--fig {
+      display: block;
+      height: 520px;
+    }
   }
 
   .example__toggle {
@@ -685,17 +688,17 @@ input[type="range"]::-ms-tooltip {
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/before-desktop@2x.png");
-      background-size: "690px 517px";
+      background-size: 690px 517px;
     }
   }
 
   .example__slim {
     height: 517px;
-    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.3%, #eaeaea 51.3%);
+    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.1%, #eaeaea 51.3%);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.3%, #eaeaea 51.3%);
-      background-size: "690px 517px";
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.1%, #eaeaea 51.3%);
+      background-size: 690px 517px;
     }
   }
 }

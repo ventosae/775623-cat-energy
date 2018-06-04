@@ -23,8 +23,8 @@ function moveDivisor() {
     divisor.style.width = slider.value+"%";
 }
 
-var beforeBtn = document.querySelector(".example__toggle--before");
-var afterBtn = document.querySelector(".example__toggle--after");
+var beforeBtn = document.querySelector(".example__toggle-before");
+var afterBtn = document.querySelector(".example__toggle-after");
 
 if(beforeBtn !== null){
   beforeBtn.addEventListener("click", function () {

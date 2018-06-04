@@ -1,0 +1,192 @@
+.adress__wrapper {
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.adress__box {
+  @include mobile;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.adress__dealers {
+  @include reset;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-text;
+  width: 140px;
+}
+
+.adress__details {
+  @include reset;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $text-font;
+  width: 140px;
+}
+
+.adress__map {
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+}
+
+.adress__picture {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.adress__picture::before {
+  content: "";
+  width: 55px;
+  height: 53px;
+  background: url("../img/map-pin.png") no-repeat;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  top: 140px;
+  left: 125px;
+}
+
+.adress__map-google {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 362px;
+}
+
+
+.adress__wrapper--gray {
+  background: linear-gradient(to bottom, #f2f2f2 115px, transparent 115px);
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #f2f2f2 205px, transparent 205px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .adress__wrapper {
+    margin: 0 auto;
+  }
+
+  .adress__box {
+    @include tablet;
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  .adress__dealers {
+    font-size: 20px;
+    line-height: 25px;
+    width: 200px;
+    padding-left: 42px;
+  }
+
+  .adress__details {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+    padding-right: 43px;
+    text-align: right;
+  }
+
+  .adress__street {
+    display: block;
+    padding-bottom: 8px;
+  }
+
+  .adress__picture::before {
+    width: 113px;
+    height: 106px;
+    top: 150px;
+    left: 330px;
+  }
+
+  .adress__map {
+    height: 400px;
+  }
+
+  .adress__picture {
+    left: 50%;
+    margin-left: -383px;
+  }
+
+  .adress__map-google {
+    z-index: 1;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adress {
+    display: flex;
+    justify-content: center;
+  }
+
+  .adress__wrapper {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .adress__box {
+    @include reset;
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    z-index: 2;
+    background-color: #ffffff;
+    margin-top: 95px;
+    left: 50%;
+    margin-left: -610px;
+  }
+
+  .adress__dealers {
+    width: 200px;
+    padding-left: 76px;
+  }
+
+  .adress__details {
+    width: 245px;
+    padding-right: 43px;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .adress__street {
+    padding-bottom: 0;
+  }
+
+  .adress__picture::before {
+    width: 113px;
+    height: 106px;
+    top: 37%;
+    left: 69%;
+  }
+
+  .adress__map {
+    width: 100%;
+  }
+
+  .adress__picture {
+    left: 50%;
+    margin-left: -720px;
+  }
+}
