@@ -14,7 +14,7 @@
 
 .main-intro__wrapper {
   display: flex;
-  padding-top: 30px;
+  padding-top: 26px;
   flex-direction: column;
   width: 320px;
   padding-left: 20px;
@@ -35,7 +35,7 @@
   max-width: 303px;
   font-size: 36px;
   font-weight: 400;
-  padding: 0 0 30px 0;
+  padding-bottom: 27px;
 }
 
 .main-intro__motto {
@@ -55,7 +55,7 @@
   height: 40px;
   padding: 0;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 18px;
   background-color: $text-green;
   text-align: center;
   text-transform: uppercase;
@@ -63,6 +63,7 @@
   border: none;
   color: #ffffff;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .main-intro__program-button:hover {
@@ -73,7 +74,7 @@
 @media (min-width: $tablet-width) {
   .main-intro {
     background: none;
-    padding-top: 60px;
+    padding-top: 55px;
   }
 
   .main-intro__wrapper {
@@ -90,14 +91,14 @@
     margin: 0;
     order: 2;
     font-size: 20px;
-    padding: 0 0 50px 0;
+    padding: 0 0 45px 0;
     margin-left: 90px;
   }
 
   .main-intro__header {
     font-size: 60px;
     max-width: 487px;
-    padding: 0 0 50px 0;
+    padding: 0 0 42px 0;
     color: $black-text;
     margin: 0;
     text-align: left;
@@ -114,6 +115,7 @@
     font-size: 20px;
     line-height: 50px;
     margin-left: 90px;
+    padding-top: 0;
   }
 
   .main-intro__product {
@@ -131,13 +133,13 @@
     width: 709px;
     height: 609px;
     position: absolute;
-    top: 210px;
+    top: 200px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-intro {
-    padding-top: 60px;
+    padding-top: 100px;
     position: relative;
   }
 
@@ -151,9 +153,25 @@
     width: 552px;
     height: 499px;
     z-index: 1;
-    top: -70px;
+    top: -75px;
     left: 450px;
     position: absolute;
+  }
+
+  .main-intro__header {
+    margin-left: 80px;
+    padding-bottom: 45px;
+  }
+
+  .main-intro__motto {
+    margin-left: 80px;
+    padding-bottom: 50px;
+  }
+
+  .main-intro__program-button {
+    margin-left: 80px;
+    line-height: 20px;
+    padding-top: 15px;
   }
 
   .main-intro__wrapper::before {
@@ -161,7 +179,7 @@
     z-index: -1;
     top: -120px;
     width: 50%;
-    height: 696px;
+    height: 697px;
     background: url("../img/index-background-desktop@1x.jpg") right no-repeat;
     content: " ";
     background-color: #64a83b;
