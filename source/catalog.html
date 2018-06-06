@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet" title="Main Style">
-    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <title>Каталог Продукции | Cat Energy 🐱</title>
   </head>
   <body class="catalog-main__body">
@@ -16,7 +24,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper" >
-        <button  type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="page-header__logo-pic" href="index.html">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" >
@@ -53,7 +61,7 @@
               <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img src="img/chicken-small-mobile@1x.jpg" width="191px" height="38px" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Курица 500г">
+              <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Курица 500г">
             </picture>
             </a>
             <div class="catalog-product__name-wrapper">
