@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   display: flex;
   box-sizing: border-box;
-  margin: 0; /* new */
+  margin: 0;
+  text-decoration: none;
 }
 
 .site-list__item {
@@ -16,7 +17,7 @@
   line-height: 20px;
   list-style: none;
   border-bottom: 1px solid $gray-line;
-  min-height: 66px; /* new */
+  min-height: 66px;
   align-items: center;
 }
 
@@ -26,6 +27,7 @@
   margin: auto;
   position: relative;
   font-family: $oswald-medium-font;
+  text-decoration: none;
 
   &:hover:not(.site-list__link--index-active) {
     opacity: 0.5;

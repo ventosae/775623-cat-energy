@@ -75,6 +75,7 @@
   margin-left: 13px;
   text-transform: uppercase;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .form__input:hover {
@@ -200,6 +201,7 @@ input:not(:placeholder-shown):invalid {
   padding: 13px;
   margin-bottom: 10px;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .form__comment:focus {
@@ -232,7 +234,6 @@ input:not(:placeholder-shown):invalid {
 }
 
 .form__label--checkbox::after {
-  @include element-color(#68b738);
   content: "";
   display: none;
   position: absolute;

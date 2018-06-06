@@ -18,6 +18,14 @@
   width: 191px;
   height: 38px;
   max-width: 100%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .page-header__wrapper {

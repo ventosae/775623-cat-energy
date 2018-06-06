@@ -2,7 +2,7 @@ var hamburgerBtn = document.querySelector(".page-header__toggle");
 var pageHeaderNav = document.querySelector(".main-navigation");
 
 pageHeaderNav.classList.remove("main-navigation--open");
-
+hamburgerBtn.classList.remove("page-header__toggle--closed");
 
   if(hamburgerBtn !== null){
   hamburgerBtn.addEventListener("click", function () {
