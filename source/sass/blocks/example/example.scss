@@ -14,7 +14,7 @@
   font-size: 36px;
   line-height: 60px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 18px;
   padding-bottom: 25px;
   font-weight: 400;
   color: $black-text;
@@ -25,7 +25,7 @@
   line-height: 18px;
   font-family: $text-font;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 
 .example__feature-wrapper {
@@ -93,7 +93,9 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 13px 45px 45px 45px;
+  padding-left: 45px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 
@@ -104,6 +106,7 @@
   justify-content: space-between;
   width: 280px;
   height: 300px;
+  margin-right: 35px;
 
   &--fig {
     width: 100%;
@@ -301,16 +304,19 @@ input[type="range"]::-ms-tooltip {
   .example__wrapper {
     @include tablet;
     margin: 0 auto;
+    padding-bottom: 55px;
   }
 
   .example {
-    background: linear-gradient(to bottom, #ffffff 652px, transparent 652px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to bottom, #ffffff 627px, transparent 627px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     padding: 0;
+    border-top: 1px solid $text-gray;
+    padding-top: 45px;
   }
 
   .example__header {
     font-size: 60px;
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 66px;
   }
 
@@ -369,13 +375,14 @@ input[type="range"]::-ms-tooltip {
 
   .example__feature-wrapper--description {
     display: flex;
+    width: 365px;
   }
 
   .example__comaprison-wrapper {
-    padding-top: 85px;
+    padding-top: 65px;
     z-index: 2;
     width: 708px;
-    height: 650px;
+    height: 630px;
 
     &--fig {
       width: 100%;
@@ -383,6 +390,7 @@ input[type="range"]::-ms-tooltip {
       padding-top: 0;
       z-index: 2;
       display: block;
+      margin-left: 70px;
     }
   }
 
@@ -409,10 +417,10 @@ input[type="range"]::-ms-tooltip {
   .example__slim {
     bottom: 0;
     background-size: 690px 517px;
-    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 48.8%, #eaeaea 45%);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 48%);
       background-size: 690px 517px;
     }
   }
@@ -600,29 +608,22 @@ input[type="range"]::-ms-tooltip {
 @media (min-width: 1300px) {
   .example__wrapper {
     @include desktop;
+    padding-bottom: 0;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 74%, #eaeaea 74%);
+    // background: linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 1032px, #eaeaea 1030px);
   }
 
   .example {
-    background: linear-gradient(to bottom, #ffffff 27%, transparent 20%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-
-    &::after {
-      border-color: red;
-      content: "";
-      position: absolute;
-      top: 0;
-      z-index: -1;
-      width: 100vw;
-      height: 100%;
-    }
+    background: linear-gradient(to bottom, #ffffff 29.3%, transparent 29%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    border: none;
+    padding-top: 0;
   }
 
   .example__header {
-    padding-top: 70px;
-    padding-bottom: 145px;
+    padding-top: 50px;
+    padding-bottom: 146px;
     z-index: 2;
   }
 
@@ -637,7 +638,7 @@ input[type="range"]::-ms-tooltip {
     padding-top: 35px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     z-index: 2;
   }
 
@@ -653,6 +654,7 @@ input[type="range"]::-ms-tooltip {
     flex-direction: column;
     z-index: 2;
 
+
     &--description {
       width: 365px;
       flex-direction: row;
@@ -667,17 +669,23 @@ input[type="range"]::-ms-tooltip {
     justify-content: flex-start;
     padding: 0;
     width: 650px;
-    height: 650px;
+    height: 100%;
     align-items: flex-end;
+    background: linear-gradient(to bottom, #ffffff 36.7%, transparent 29%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    min-height: 648px;
+    margin-right: 0;
 
     &--fig {
       display: block;
-      height: 520px;
+      min-height: auto;
     }
   }
 
   .example__toggle {
-    padding-top: 45px;
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 580px;
+    padding-top: 0;
   }
 
   .example__fat {
@@ -694,10 +702,10 @@ input[type="range"]::-ms-tooltip {
 
   .example__slim {
     height: 517px;
-    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.1%, #eaeaea 51.3%);
+    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 47%);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 51.1%, #eaeaea 51.3%);
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 47%);
       background-size: 690px 517px;
     }
   }

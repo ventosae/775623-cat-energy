@@ -19,7 +19,7 @@ var run = require("run-sequence");
 var del = require("del");
 var htmlmin = require('gulp-htmlmin');
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -27,7 +27,8 @@ gulp.task("style", function() {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(minify({
+        }))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -109,7 +110,7 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
-  });w
+  });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);

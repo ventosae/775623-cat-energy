@@ -7,8 +7,8 @@
 
 .catalog-product__main-header {
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 45px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   padding-left: 20px;
   font-size: 36px;
   line-height: 60px;
@@ -18,11 +18,15 @@
   margin: 0;
 }
 
+.catalog-product__item {
+  height: 210px;
+  border: 1px solid #ededed;
+  margin-top: -1px;
+}
+
 .catalog-product {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -1px;
-  border: 1px solid #ededed;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -79,8 +83,7 @@
 .catalog-product__show-all {
   position: relative;
   margin-top: -1px;
-  padding-top: 78px;
-  border: 1px solid #ededed;
+  padding-top: 83px;
   padding-bottom: 35px;
 
   &::before {
@@ -126,7 +129,7 @@
 
   .catalog-product__main-header {
     padding-left: 0;
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 80px;
     font-size: 60px;
     border: none;
@@ -141,6 +144,12 @@
     height: 516px;
     border: none;
     background: linear-gradient(#ffffff 90px, #f2f2f2 90px);
+    padding-bottom: 35px;
+  }
+
+  .catalog-product__img--small {
+    margin-top: 40px;
+    margin-bottom: -41px;
   }
 
   .catalog-product__list {
@@ -154,17 +163,24 @@
   .catalog-product__item {
     width: 324px;
     padding-bottom: 60px;
+    height: auto;
+    border: none;
   }
 
   .catalog-product__name-wrapper {
     padding: 0;
     width: 249px;
+
+    &--big {
+      margin-top: -38px;
+    }
   }
 
   .catalog-product__link {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    min-height: 0;
   }
 
   .catalog-product__name {
@@ -189,11 +205,13 @@
   .catalog-product__show-all {
     height: 426px;
     margin-top: 89px;
-    padding-top: 165px;
+    padding-top: 150px;
+    padding-bottom: 0;
+    border: 1px solid $gray-line;
   }
 
   .catalog-product__show-all::before {
-    top: 55px;
+    top: 40px;
     width: 60px;
     height: 60px;
     margin-left: -30px;
@@ -203,14 +221,19 @@
     font-size: 20px;
     width: 150px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   .catalog-product__text {
     font-size: 16px;
     width: 170px;
     margin: 0 auto;
-    padding-bottom: 99px;
+    padding-bottom: 105px;
+  }
+
+  .catalog-product__button {
+    margin: 20px;
+    margin-top: 0;
   }
 }
 
@@ -220,7 +243,7 @@
   }
 
   .catalog-product__main-header {
-    padding-top: 85px;
+    padding-top: 70px;
   }
 
   .catalog-product {
