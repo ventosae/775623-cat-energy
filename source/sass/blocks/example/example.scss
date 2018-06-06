@@ -124,7 +124,8 @@
   height: 100%;
   z-index: 99;
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     background: url("../img/before-mobile@2x.png") no-repeat;
     background-size: cover;
     background-color: $text-gray;
@@ -146,7 +147,8 @@
   height: 100%;
   background-color: $text-gray;
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     background: url("../img/after-mobile@2x.png") no-repeat;
     background-size: cover;
     background-color: $text-gray;
@@ -179,6 +181,8 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 0;
   position: relative;
   top: 3px;
+  border: none;
+  outline: none;
 }
 
 input[type="range"]:focus {
@@ -208,6 +212,7 @@ input[type="range"]::-moz-range-thumb {
   border: none;
   padding: 0;
   margin: 0;
+  outline: none;
 }
 
 input[type="range"]:focus::-moz-range-thumb {
@@ -406,7 +411,8 @@ input[type="range"]::-ms-tooltip {
     height: 517px;
     background-color: transparent;
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background: url("../img/before-tablet@2x.png") no-repeat;
       background-size: cover;
       width: 690px;
@@ -419,7 +425,8 @@ input[type="range"]::-ms-tooltip {
     background-size: 690px 517px;
     background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 48.8%, #eaeaea 45%);
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, #ffffff 171px, transparent 171px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 48%);
       background-size: 690px 517px;
     }
@@ -444,7 +451,6 @@ input[type="range"]::-ms-tooltip {
 
   input[type="range"]::-webkit-slider-thumb {
     top: -15px;
-    display: inline-block;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -694,7 +700,8 @@ input[type="range"]::-ms-tooltip {
     width: 690px;
     height: 517px;
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background-image: url("../img/before-desktop@2x.png");
       background-size: 690px 517px;
     }
@@ -704,7 +711,8 @@ input[type="range"]::-ms-tooltip {
     height: 517px;
     background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 47%);
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 47%, #eaeaea 47%);
       background-size: 690px 517px;
     }

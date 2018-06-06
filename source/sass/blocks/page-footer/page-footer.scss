@@ -13,6 +13,14 @@
   margin-bottom: 25px;
   display: block;
   text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .page-footer__social {
@@ -40,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .page-footer__item {
@@ -59,6 +68,7 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-color;
+  text-decoration: none;
 
   &:active {
     opacity: 0.5;

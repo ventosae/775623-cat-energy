@@ -19,6 +19,10 @@
   height: 130px;
 }
 
+.additional-products__button {
+  text-decoration: none;
+}
+
 .additional-products__product {
   @include reset;
   font-size: 16px;

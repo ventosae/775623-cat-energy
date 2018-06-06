@@ -6,7 +6,8 @@
   margin-left: auto;
   transition: all 0.3s ease-out;
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     background: url("../img/index-background-mobile@2x.jpg") top no-repeat;
     background-size: 320px auto;
   }
@@ -185,7 +186,8 @@
     background-color: #64a83b;
     left: 50%;
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background: url("../img/index-background-desktop@2x.jpg") right no-repeat;
       background-size: 720px auto;
     }
