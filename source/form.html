@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Подбор Программы | Cat Energy 🐱</title>
   </head>
-  <body class="form__body">
+  <body class="form-body">
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
@@ -42,7 +42,7 @@
             <a class="site-list__link " href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="#">Подбор Программы</a>
+            <a class="site-list__link site-list__link--active">Подбор Программы</a>
           </li>
         </ul>
       </nav>
@@ -63,11 +63,11 @@
                       <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
                     </li>
                     <li class="form__item">
-                      <label class="form__label" for="weight">Вес(кг):*</label>
+                      <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
                       <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
                     </li>
                     <li class="form__item">
-                      <label class="form__label" for="age">Возраст(лет):</label>
+                      <label class="form__label form__label--age" for="age">Возраст (лет):</label>
                       <input class="form__input" type="number" name="age" id="age" placeholder="7">
                     </li>
                   </ul>
@@ -90,7 +90,6 @@
                   </ul>
                 </fieldset>
             </div>
-          </form>
             <fieldset class="form__fieldset form__fieldset--contact">
               <legend class="form__legend form__legend--contact">
                 Контактные данные (владельца кота)
@@ -141,6 +140,7 @@
                 </li>
               </ul>
             </fieldset>
+         </form>
             <div class="form__wrapper-button">
               <button class="form__button" type="submit" value="submit">отправить заявку</button>
               <p class="form__required">* — Обязательные поля</p>
@@ -153,8 +153,8 @@
           <div class="adress__wrapper adress__wrapper--gray">
             <h4 class="visually-hidden">Адрес офиса Cat Energy</h4>
             <div class="adress__box">
-                <p class="adress__dealers">Приглашаем <br> к&nbsp;сотрудничеству <br> дилеров</p>
-                <p class="adress__details"><span class="adress__street">ул.Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
+                <p class="adress__dealers">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+                <p class="adress__details"><span class="adress__street">ул. Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
             </div>
 
             <div class="adress__map">
@@ -199,10 +199,10 @@
         </li>
         </ul>
         </div>
-        <div class="footer-copyright">
+        <div class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="page-footer__copyright-text">HTML Academy</span>
-            <svg class="page-footer__copyright-img" width="27px" height="34px">
+            <svg class="page-footer__copyright-img" width="27" height="34">
               <use xlink:href="#htmlacademy" ></use>
             </svg>
           </a>

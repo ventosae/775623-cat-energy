@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Cat Energy 🐱 - Функциональное Питание для Котов</title>
   </head>
-  <body class="page-main__body">
+  <body class="page-main">
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
@@ -36,7 +36,7 @@
       <nav class="main-navigation main-navigation--open ">
         <ul class="site-list ">
           <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active" href="#">Главная</a>
+            <a class="site-list__link site-list__link--active site-list__link--index site-list__link--index-active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link site-list__link--index" href="catalog.html">Каталог Продукции</a>
@@ -48,7 +48,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main__hero">
 
       <section class="main-intro">
         <div class="main-intro__wrapper">
@@ -69,12 +69,12 @@
       </section>
       <section class="programs">
         <div class="programs__type programs__type--slim">
-          <h3 class="programs__header programs--slim">Похудение</h3>
+          <h3 class="programs__header programs__header--slim">Похудение</h3>
           <p class="programs__description programs__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="programs__link" href="catalog.html#slim">Каталог Slim</a>
         </div>
-        <div class="programs__type ">
-          <h3 class="programs__header programs--pro">Набор Массы</h3>
+        <div class="programs__type programs__type--pro">
+          <h3 class="programs__header programs__header--pro">Набор Массы</h3>
           <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="programs__link" href="catalog.html#pro">Каталог Pro</a>
         </div>
@@ -96,14 +96,14 @@
               <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по‑прежнему спит по 16 часов в день.</p>
                 <div class="example__feature-wrapper">
                   <div class="example__feature-wrapper example__feature-wrapper--description">
-                    <dl class="example__feature-box">
-                      <dd class="example__result">5 кг</dd>
-                      <dt class="example__value">снижение <br>веса</dt>
-                  </dl>
-                  <dl class="example__feature-box">
-                      <dd class="example__result">60 дней</dd>
-                      <dt class="example__value">затрачено времени</dt>
-                  </dl>
+                    <div class="example__feature-box">
+                      <span class="example__result">5 кг</span>
+                      <span class="example__value">снижение веса</span>
+                  </div>
+                  <div class="example__feature-box">
+                      <span class="example__result">60 дней</span>
+                      <span class="example__value">затрачено времени</span>
+                  </div>
                 </div>
                   <p class="example__expenses"><span class="example__subtitle"> затраты на питание: </span> 15 000 руб.</p>
                 </div>
@@ -118,7 +118,7 @@
                   </figure>
                   <div class="example__toggle">
                     <button class="example__toggle-before" type="button"><span class="example__before">Было</span></button>
-                    <input class="example__input" type="range" min="0" max="100" value="50" id="slider" onchange="moveDivisor() "oninput="moveDivisor()">
+                    <input class="example__input" type="range" name="slider" min="0" max="100" value="50" id="slider" onchange="moveDivisor() "oninput="moveDivisor()">
                     <button class="example__toggle-after" type="button"><span class="example__after">Стало</span> </button>
                   </div>
               </div>
@@ -129,8 +129,8 @@
           <div class="adress__wrapper">
             <h4 class="visually-hidden">Адрес офиса Cat Energy</h4>
             <div class="adress__box">
-                <p class="adress__dealers">Приглашаем <br> к&nbsp;сотрудничеству <br> дилеров</p>
-                <p class="adress__details"><span class="adress__street">ул.Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
+                <p class="adress__dealers">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+                <p class="adress__details"><span class="adress__street">ул. Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
             </div>
 
             <div class="adress__map">
@@ -178,7 +178,7 @@
         </li>
         </ul>
         </div>
-        <div class="footer-copyright">
+        <div class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="page-footer__copyright-text">HTML Academy</span>
             <svg class="page-footer__copyright-img" width="27" height="34">

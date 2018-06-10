@@ -28,14 +28,14 @@ var afterBtn = document.querySelector(".example__toggle-after");
 
 if(beforeBtn !== null){
   beforeBtn.addEventListener("click", function () {
-    divisor.style.width = "0%";
-    slider.value = 0
+    divisor.style.width = "100%";
+    slider.value = 100
   });
 }
 
 if(afterBtn !== null){
   afterBtn.addEventListener("click", function () {
-    divisor.style.width = "100%";
-    slider.value = 100
+    divisor.style.width = "0%";
+    slider.value = 0
   });
 }

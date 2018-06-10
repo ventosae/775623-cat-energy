@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Каталог Продукции | Cat Energy 🐱</title>
   </head>
-  <body class="catalog-main__body">
+  <body class="catalog-main">
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
@@ -39,7 +39,7 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="#">Каталог Продукции</a>
+            <a class="site-list__link site-list__link--active">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор Программы</a>
@@ -48,12 +48,12 @@
       </nav>
     </header>
 
-  <main class="catalog-main">
-    <section class="catalog-product__main">
+  <main class="catalog-main__hero">
+    <section class="catalog-product">
       <h1 class="catalog-product__main-header">Каталог продукции</h1>
       <ul class="catalog-product__list">
         <li class="catalog-product__item">
-          <article class="catalog-product" id="pro">
+          <article class="catalog-product__hero" id="pro">
             <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img catalog-product__img--small">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
@@ -86,7 +86,7 @@
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product">
+          <article class="catalog-product__hero">
             <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
@@ -120,7 +120,7 @@
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product">
+          <article class="catalog-product__hero">
             <a class="catalog-product__link" href="#">
               <picture class="catalog-product__img catalog-product__img--small">
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
@@ -154,8 +154,8 @@
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product">
-            <a class="catalog-product__img" href="#">
+          <article class="catalog-product__hero">
+            <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -165,7 +165,7 @@
               <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Рыба 1000г">
             </picture>
             </a>
-            <div class="catalog-product__name-wrapper catalog-product__name-wrapper--big">
+            <div class="catalog-product__name-wrapper catalog-product__name-wrapper--big-fish">
               <a class="catalog-product__link" href="#">
                 <h3 class="catalog-product__name">Cat Energy
                   PRO 1000 г</h3>
@@ -187,7 +187,7 @@
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product" id="slim">
+          <article class="catalog-product__hero" id="slim">
             <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img catalog-product__img--small">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
@@ -220,7 +220,7 @@
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product">
+          <article class="catalog-product__hero">
             <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
@@ -246,14 +246,14 @@
               </dl>
               <dl class="catalog-product__row">
                 <dt class="catalog-product__column">Цена</dt>
-                <dd class="catalog-product__column">400 Р.</dd>
+                <dd class="catalog-product__column">700 Р.</dd>
               </dl>
             </div>
             <a class="button catalog-product__button" href="#">Заказать</a>
           </article>
         </li>
         <li class="catalog-product__item">
-          <article class="catalog-product">
+          <article class="catalog-product__hero">
             <a class="catalog-product__link" href="#">
             <picture class="catalog-product__img catalog-product__img--small">
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
@@ -297,7 +297,7 @@
 
     <section class="additional-products ">
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__header">Дополнительные Товары</h2>
+        <h2 class="additional-products__header">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <h4 class="additional-products__product">Сахарозаменитель</h4>
@@ -341,8 +341,8 @@
         <div class="adress__wrapper">
         <h4 class="visually-hidden">Адрес офиса Cat Energy</h4>
           <div class="adress__box">
-              <p class="adress__dealers">Приглашаем <br> к&nbsp;сотрудничеству <br> дилеров</p>
-              <p class="adress__details"><span class="adress__street">ул.Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
+              <p class="adress__dealers">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <p class="adress__details"><span class="adress__street">ул. Большая <br> Конюшенная, д. 19/8 </span> <br> Санкт-Петербург</p>
           </div>
 
           <div class="adress__map">
@@ -387,10 +387,10 @@
         </li>
         </ul>
         </div>
-        <div class="footer-copyright">
+        <div class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="page-footer__copyright-text">HTML Academy</span>
-            <svg class="page-footer__copyright-img" width="27px" height="34px">
+            <svg class="page-footer__copyright-img" width="27" height="34">
               <use xlink:href="#htmlacademy" ></use>
             </svg>
           </a>

@@ -12,6 +12,7 @@
 .page-header__logo-pic {
   display: flex;
   align-items: center;
+  padding-top: 8px;
 }
 
 .page-header__logo-img {
@@ -75,8 +76,6 @@
   .page-header__logo-pic {
     display: flex;
     margin: auto;
-    padding-top: 0;
-    padding-left: 10px;
     width: 209px;
     height: 59px;
   }
@@ -109,7 +108,7 @@
   }
 
   .page-header__logo-pic {
-    padding-left: 10px;
+    padding-top: 5px;
     margin: 0;
   }
 
