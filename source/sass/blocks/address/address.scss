@@ -109,7 +109,8 @@
 
   .adress__street {
     display: block;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
+    padding-top: 5px;
   }
 
   .adress__picture::before {
@@ -156,6 +157,7 @@
     margin-top: 95px;
     left: 50%;
     margin-left: -610px;
+    padding-top: 5px;
   }
 
   .adress__dealers {
@@ -167,11 +169,11 @@
     width: 245px;
     padding-right: 43px;
     text-align: left;
-    padding-top: 10px;
   }
 
   .adress__street {
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .adress__picture::before {
