@@ -12,8 +12,8 @@ hamburgerBtn.classList.remove("page-header__toggle--closed");
 }
 
   if(document.addEventListener){
-  document.addEventListener('invalid', function(e){
-    e.target.className += ' form__input--invalid';
+  document.addEventListener("invalid", function(e){
+    e.target.className += "form__input--invalid";
   }, true);
   }
 
