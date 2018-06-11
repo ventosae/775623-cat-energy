@@ -13,11 +13,19 @@ var rename = require("gulp-rename");
 var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
-var htmlmin = require('gulp-htmlmin');
+var htmlmin = require("gulp-htmlmin");
+var prettyHtml = require("gulp-pretty-html");
+
+
+gulp.task("htmlpretty", function () {
+    return gulp.src("source/*.html")
+        .pipe(prettyHtml())
+        .pipe(gulp.dest("build/prettyhtmlboy"));
+});
 
 gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
@@ -92,8 +100,8 @@ gulp.task("copy", function () {
 gulp.task("build", function (done) {
   run(
     "clean",
-    "images",
-    "webp",
+    // "images",
+    // "webp",
     "copy",
     "style",
     "sprite",

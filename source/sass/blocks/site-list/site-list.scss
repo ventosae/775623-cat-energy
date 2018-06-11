@@ -29,18 +29,19 @@
   font-family: $oswald-medium-font;
   text-decoration: none;
 
-  &:hover:not(.site-list__link--index-active) {
+  &:hover[href] {
     opacity: 0.5;
   }
 
-  &:active:not(.site-list__link--index-active) {
+  &:active[href] {
     opacity: 0.3;
   }
 }
 
 @media (max-width: 767px) {
   .site-list {
-    max-width: 320px;
+    width: 320px;
+    flex-wrap: wrap;
   }
 }
 
@@ -56,7 +57,7 @@
 
   .site-list {
     width: 440px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -74,6 +75,8 @@
 
   .site-list__link {
     font-family: $oswald-font;
+    padding-top: 10px;
+    margin-bottom: 7px;
   }
 }
 

@@ -1,8 +1,3 @@
-.form__body {
-  overflow-x: hidden;
-  background-color: #ffffff;
-}
-
 .form,
 .form__main {
   margin: 0 auto;
@@ -49,7 +44,6 @@
 
 .form__list {
   @include reset;
-  position: relative;
 }
 
 .form__item {
@@ -57,12 +51,21 @@
   flex-wrap: nowrap;
   padding-bottom: 12px;
   align-items: center;
+  position: relative;
 }
 
 .form__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &--weight {
+    width: 91px;
+  }
+
+  &--age {
+    width: 171px;
+  }
 }
 
 .form__input {
@@ -76,6 +79,7 @@
   text-transform: uppercase;
   background-color: #ffffff;
   box-shadow: none;
+  appearance: textfield;
 }
 
 .form__input:hover {
@@ -108,7 +112,7 @@ input:not(:placeholder-shown):invalid {
 
 .form__fieldset--selection > ul > li:nth-child(2) > input,
 .form__fieldset--selection > ul > li:nth-child(3) > input {
-  margin-left: 21px;
+  margin-left: 15px;
 }
 
 .form__fieldset--golas {
@@ -124,6 +128,11 @@ input:not(:placeholder-shown):invalid {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.form__checkbox:focus + .form__label--checkbox,
+.form__radio:focus + .form__label--radio {
+  opacity: 0.8;
 }
 
 .form__label--radio::before {
@@ -263,7 +272,7 @@ input:not(:placeholder-shown):invalid {
 .form__button {
   margin: auto;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -304,7 +313,7 @@ input:not(:placeholder-shown):invalid {
   width: 20px;
   height: 20px;
   right: 12px;
-  bottom: 25px;
+  top: 14px;
 }
 
 .form__input:focus + .form__icon use {
@@ -342,27 +351,36 @@ input:not(:placeholder-shown):invalid {
   .form__label {
     font-size: 20px;
     line-height: 20px;
+
+    &--weight {
+      width: 91px;
+    }
+
+    &--age {
+      width: 157px;
+    }
   }
 
   .form__input {
     font-size: 20px;
     line-height: 20px;
-    padding: 16px;
+    padding: 15px;
     margin-left: 13px;
     padding-left: 20px;
   }
 
   .form__fieldset--selection {
-    padding-bottom: 40px;
+    padding-bottom: 48px;
   }
 
   .form__fieldset--golas {
     border: 1px solid rgba(205, 205, 205, 0.5);
     padding-left: 30px;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
   }
 
   .form__label--radio::before {
@@ -394,7 +412,7 @@ input:not(:placeholder-shown):invalid {
 
   .form__legend::after {
     top: 21px;
-    left: calc(100% + 22px);
+    left: calc(100% + 42px);
   }
 
   .form__legend::before {
@@ -408,22 +426,23 @@ input:not(:placeholder-shown):invalid {
   }
 
   .form__fieldset--comment {
-    margin-top: 48px;
+    margin-top: 50px;
     margin-bottom: 0;
   }
 
   .form__comment {
     width: 631px;
     min-height: 174px;
-    margin-top: 65px;
+    margin-top: 75px;
     font-size: 20px;
     line-height: 30px;
     padding: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 57px;
+    padding-top: 10px;
   }
 
   .form__list--additional {
-    padding-top: 53px;
+    padding-top: 55px;
     display: flex;
     flex-wrap: wrap;
     jusify-content: space-between;
@@ -433,6 +452,11 @@ input:not(:placeholder-shown):invalid {
   .form__list--additional > li {
     width: 50%;
     padding-bottom: 30px;
+  }
+
+  .form__list--additional > li:nth-child(2),
+  .form__list--additional > li:nth-child(4) {
+    padding-left: 27px;
   }
 
   .form__label--checkbox::before {
@@ -453,13 +477,14 @@ input:not(:placeholder-shown):invalid {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 68px;
-    width: 495px;
+    width: 525px;
+    margin-left: 40px;
   }
 
   .form__button {
     margin: 0;
     width: 283px;
-    height: 52px;
+    min-height: 52px;
     padding: 0;
     font-size: 20px;
     line-height: 20px;
@@ -473,16 +498,17 @@ input:not(:placeholder-shown):invalid {
   .form__required {
     font-size: 16px;
     line-height: 16px;
+    width: 181px;
   }
 
   .form__icon--mail {
     right: 20px;
-    top: 25px;
+    top: 22px;
   }
 
   .form__icon--phone {
     right: 17px;
-    bottom: 40px;
+    top: 20px;
   }
 }
 
@@ -522,13 +548,17 @@ input:not(:placeholder-shown):invalid {
   .form__wrapper--fields > fieldset {
     margin: 0;
     width: 570px;
-    max-height: 196px;
+    min-height: 196px;
+    padding-bottom: 0;
+  }
+
+  .form__wrapper--fields > fieldset:nth-child(2) {
+    margin-bottom: 48px;
   }
 
   .form__fieldset--golas {
     padding-top: 24px;
     padding-bottom: 24px;
-    height: auto;
     min-height: auto;
     padding-left: 30px;
   }
@@ -538,7 +568,7 @@ input:not(:placeholder-shown):invalid {
   }
 
   .form__fieldset--contact {
-    margin-top: 70px;
+    margin-top: 20px;
   }
 
   .form__legend {
@@ -548,12 +578,13 @@ input:not(:placeholder-shown):invalid {
   }
 
   .form__legend--contact {
-    padding-bottom: 71px;
+    padding-bottom: 74px;
   }
 
   .form__fieldset--contact > ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .form__fieldset--contact > ul > li {
@@ -570,30 +601,46 @@ input:not(:placeholder-shown):invalid {
   }
 
   .form__fieldset--comment {
-    margin-top: 50px;
+    margin-top: 48px;
   }
 
   .form__comment {
     width: 1220px;
     min-height: 174px;
-    margin-top: 73px;
+    margin-top: 75px;
+    padding: 10px;
+    margin-bottom: 60px;
+    padding-left: 18px;
   }
 
   .form__list--additional {
-    padding-top: 53px;
-    padding-bottom: 30px;
+    padding-top: 54px;
+    padding-bottom: 32px;
   }
 
   .form__list--additional > li {
     width: 25%;
   }
 
+  .form__list--additional > li:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  .form__list--additional > li:nth-child(3) {
+    padding-left: 38px;
+  }
+
+  .form__list--additional > li:nth-child(4) {
+    padding-left: 60px;
+  }
+
   .form__wrapper-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
-    width: 790px;
+    margin-bottom: 82px;
+    width: 829px;
+    margin-left: 1px;
   }
 
   .form__button {
@@ -613,5 +660,9 @@ input:not(:placeholder-shown):invalid {
 
   .form__item {
     padding-bottom: 20px;
+  }
+
+  .form__required {
+    padding-bottom: 5px;
   }
 }
