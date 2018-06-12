@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald Medium";
   src: local("Oswald Medium"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
@@ -966,7 +967,7 @@ template {
 
 @media (min-width: 1300px) {
   .main-intro {
-    padding-top: 100px;
+    padding-top: 101px;
     position: relative; }
   .main-intro__wrapper {
     width: 1300px;
@@ -2688,7 +2689,7 @@ input[class="example__input"]::-ms-tooltip {
 @media (min-width: 768px) {
   .example__slim {
     bottom: 0;
-    width: 49%;
+    width: 49.1%;
     background-size: 690px 517px;
     background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, #ffffff 175px, transparent 175px), linear-gradient(to right, #f2f2f2 48.8%, #eaeaea 45%); } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -2830,15 +2831,13 @@ input[class="example__input"]::-ms-tooltip {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .example {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(29.3%, #ffffff), color-stop(29%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #f2f2f2), color-stop(50%, #eaeaea));
-    background: linear-gradient(to bottom, #ffffff 29.3%, transparent 29%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     border: none;
     padding-top: 0; }
   .example__header {
     padding-top: 50px;
     padding-bottom: 146px;
-    z-index: 2;
-    max-height: 256px; }
+    z-index: 2; }
   .example__description {
     width: 435px;
     margin-bottom: 68px;
@@ -2924,6 +2923,7 @@ input[class="example__input"]::-ms-tooltip {
 @media (min-width: 1300px) {
   .example__result {
     margin-top: -5px; }
+  /* 20 минут смотрел-смотрел в пиксель перфект, но точнее сделать ну ни как не получается. Корректировал уже до сотых процента :) */
   .example__slim {
     width: 52.99%;
     height: 517px;
