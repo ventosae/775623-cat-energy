@@ -19,6 +19,7 @@ var run = require("run-sequence");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var prettyHtml = require("gulp-pretty-html");
+var ghPages = require('gulp-gh-pages');
 
 
 gulp.task("htmlpretty", function () {
@@ -34,12 +35,17 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(minify({
         }))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task("sprite", function () {

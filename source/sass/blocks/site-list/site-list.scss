@@ -19,6 +19,7 @@
   border-bottom: 1px solid $gray-line;
   min-height: 66px;
   align-items: center;
+
 }
 
 .site-list__link {
@@ -53,6 +54,7 @@
     border-bottom: none;
     min-height: auto;
     width: auto;
+    margin-left: 5px;
   }
 
   .site-list {
@@ -61,6 +63,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    margin-right: 2px;
   }
 
   .site-list__link--active::after {
