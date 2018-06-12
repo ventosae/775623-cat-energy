@@ -154,14 +154,14 @@
   }
 }
 
-input[name="slider"] {
+input[class="example__input"] {
   @include reset;
   appearance: none;
   position: relative;
   width: 84px;
 }
 
-input[name="slider"]::-webkit-slider-runnable-track {
+input[class="example__input"]::-webkit-slider-runnable-track {
   appearance: none;
   width: 84px;
   height: 14px;
@@ -170,7 +170,7 @@ input[name="slider"]::-webkit-slider-runnable-track {
   background-color: #ffffff;
 }
 
-input[name="slider"]::-webkit-slider-thumb {
+input[class="example__input"]::-webkit-slider-thumb {
   appearance: none;
   width: 35px;
   height: 6px;
@@ -184,15 +184,15 @@ input[name="slider"]::-webkit-slider-thumb {
   outline: none;
 }
 
-input[name="slider"]:focus {
+input[class="example__input"]:focus {
   outline: none;
 }
 
-input[name="slider"]:active {
+input[class="example__input"]:active {
   outline: none;
 }
 
-input[name="slider"]::-moz-range-track {
+input[class="example__input"]::-moz-range-track {
   appearance: none;
   position: relative;
   width: 84px;
@@ -202,7 +202,7 @@ input[name="slider"]::-moz-range-track {
   background-color: #ffffff;
 }
 
-input[name="slider"]::-moz-range-thumb {
+input[class="example__input"]::-moz-range-thumb {
   appearance: none;
   width: 35px;
   height: 6px;
@@ -214,11 +214,11 @@ input[name="slider"]::-moz-range-thumb {
   outline: none;
 }
 
-input[name="slider"]:focus::-moz-range-thumb {
+input[class="example__input"]:focus::-moz-range-thumb {
   background: $text-green;
 }
 
-input[name="slider"]::-ms-track {
+input[class="example__input"]::-ms-track {
   width: 85px;
   height: 14px;
   background: transparent;
@@ -230,17 +230,17 @@ input[name="slider"]::-ms-track {
   margin: 0;
 }
 
-input[name="slider"]::-ms-fill-lower {
+input[class="example__input"]::-ms-fill-lower {
   background: #ffffff;
   border-radius: 3px;
 }
 
-input[name="slider"]::-ms-fill-upper {
+input[class="example__input"]::-ms-fill-upper {
   background: #ffffff;
   border-radius: 3px;
 }
 
-input[name="slider"]::-ms-thumb {
+input[class="example__input"]::-ms-thumb {
   appearance: none;
   width: 35px;
   height: 6px;
@@ -248,7 +248,7 @@ input[name="slider"]::-ms-thumb {
   border-radius: 3px;
 }
 
-input[name="slider"]::-ms-tooltip {
+input[class="example__input"]::-ms-tooltip {
   display: none;
 }
 
@@ -439,7 +439,7 @@ input[name="slider"]::-ms-tooltip {
 
   .example__slim {
     bottom: 0;
-    width: 49%;
+    width: 49.1%;
     background-size: 690px 517px;
     background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, #ffffff 175px, transparent 175px), linear-gradient(to right, #f2f2f2 48.8%, #eaeaea 45%);
 
@@ -450,13 +450,13 @@ input[name="slider"]::-ms-tooltip {
     }
   }
 
-  input[name="slider"] {
+  input[class="example__input"] {
     width: 428px;
     height: 46px;
     background-color: transparent;
   }
 
-  input[name="slider"]::-webkit-slider-runnable-track {
+  input[class="example__input"]::-webkit-slider-runnable-track {
     height: 6px;
     border: none;
     border-radius: 3px;
@@ -467,7 +467,7 @@ input[name="slider"]::-ms-tooltip {
     width: 428px;
   }
 
-  input[name="slider"]::-webkit-slider-thumb {
+  input[class="example__input"]::-webkit-slider-thumb {
     top: -15px;
     width: 34px;
     height: 34px;
@@ -480,19 +480,19 @@ input[name="slider"]::-ms-tooltip {
     cursor: pointer;
   }
 
-  input[name="slider"]:hover::-webkit-slider-thumb {
+  input[class="example__input"]:hover::-webkit-slider-thumb {
     box-shadow:
       inset 0 0 0 12px rgb(255, 255, 255),
       0 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]:focus::-webkit-slider-thumb {
+  input[class="example__input"]:focus::-webkit-slider-thumb {
     box-shadow:
       inset 0 0 0 12px rgb(255, 255, 255),
       0 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]:active::-webkit-slider-thumb {
+  input[class="example__input"]:active::-webkit-slider-thumb {
     border-color: rgb(104, 183, 56);
     box-shadow:
       inset 0 0 0 1px rgb(104, 183, 56),
@@ -500,7 +500,7 @@ input[name="slider"]::-ms-tooltip {
       0 4px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]::-moz-range-track {
+  input[class="example__input"]::-moz-range-track {
     width: 428px;
     height: 6px;
     border: none;
@@ -511,7 +511,7 @@ input[name="slider"]::-ms-tooltip {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   }
 
-  input[name="slider"]::-moz-range-thumb {
+  input[class="example__input"]::-moz-range-thumb {
     top: -15px;
     display: inline-block;
     width: 34px;
@@ -525,19 +525,19 @@ input[name="slider"]::-ms-tooltip {
     cursor: pointer;
   }
 
-  input[name="slider"]:hover::-moz-range-thumb {
+  input[class="example__input"]:hover::-moz-range-thumb {
     box-shadow:
       inset 0 0 0 12px rgb(255, 255, 255),
       0 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]:focus::-moz-range-thumb {
+  input[class="example__input"]:focus::-moz-range-thumb {
     box-shadow:
       inset 0 0 0 12px rgb(255, 255, 255),
       0 3px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]:active::-moz-range-thumb {
+  input[class="example__input"]:active::-moz-range-thumb {
     border-color: rgb(104, 183, 56);
     box-shadow:
       inset 0 0 0 1px rgb(104, 183, 56),
@@ -545,7 +545,7 @@ input[name="slider"]::-ms-tooltip {
       0 4px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]::-ms-track {
+  input[class="example__input"]::-ms-track {
     width: 428px;
     height: 6px;
     background: transparent;
@@ -557,17 +557,17 @@ input[name="slider"]::-ms-tooltip {
     margin: 0;
   }
 
-  input[name="slider"]::-ms-fill-lower {
+  input[class="example__input"]::-ms-fill-lower {
     background-color: #dcdcdc;
     border-radius: 3px;
   }
 
-  input[name="slider"]::-ms-fill-upper {
+  input[class="example__input"]::-ms-fill-upper {
     background-color: #dcdcdc;
     border-radius: 3px;
   }
 
-  input[name="slider"]::-ms-thumb {
+  input[class="example__input"]::-ms-thumb {
     display: inline-block;
     width: 34px;
     height: 34px;
@@ -581,7 +581,7 @@ input[name="slider"]::-ms-tooltip {
     bottom: -10px;
   }
 
-  input[name="slider"]:active::-ms-thumb {
+  input[class="example__input"]:active::-ms-thumb {
     border-color: rgb(104, 183, 56);
     box-shadow:
       inset 0 0 0 1px rgb(104, 183, 56),
@@ -589,7 +589,7 @@ input[name="slider"]::-ms-tooltip {
       0 4px 5px rgba(0, 0, 0, 0.25);
   }
 
-  input[name="slider"]:hover:-ms-thumb {
+  input[class="example__input"]:hover:-ms-thumb {
     box-shadow:
       inset 0 0 0 12px rgb(255, 255, 255),
       0 3px 5px rgba(0, 0, 0, 0.25);
@@ -646,7 +646,7 @@ input[name="slider"]::-ms-tooltip {
   }
 
   .example {
-    background: linear-gradient(to bottom, #ffffff 29.3%, transparent 29%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to bottom, #ffffff 190px, transparent 190px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     border: none;
     padding-top: 0;
   }
@@ -655,7 +655,6 @@ input[name="slider"]::-ms-tooltip {
     padding-top: 50px;
     padding-bottom: 146px;
     z-index: 2;
-    max-height: 256px;
   }
 
   .example__description {
@@ -729,7 +728,7 @@ input[name="slider"]::-ms-tooltip {
   .example__fat {
     @include reset;
     background-image: url("../img/after-desktop@1x.png");
-    width: 690px;
+    width: 689px;
     height: 517px;
 
     @media (min-resolution: 144dpi),
@@ -739,8 +738,13 @@ input[name="slider"]::-ms-tooltip {
     }
   }
 
+  .example__result {
+    margin-top: -5px;
+  }
+
+  /* 20 минут смотрел-смотрел в пиксель перфект, но точнее сделать ну ни как не получается. Корректировал уже до сотых процента :) */
   .example__slim {
-    width: 53%;
+    width: 52.99%;
     height: 517px;
     background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, #ffffff 194px, transparent 194px), linear-gradient(to right, #f2f2f2 52.6%, #eaeaea 53%);
 
