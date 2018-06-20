@@ -100,8 +100,8 @@ gulp.task("copy", function () {
 gulp.task("build", function (done) {
   run(
     "clean",
-    "images",
-    "webp",
+    // "images",
+    // "webp",
     "copy",
     "style",
     "sprite",
