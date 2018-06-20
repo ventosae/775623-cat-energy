@@ -4,14 +4,14 @@
   src: local("Oswald Medium"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
-  font-display: optional; }
+  font-display: auto; }
 
 @font-face {
   font-family: "Oswald";
   src: local("Oswald Regular"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-style: normal;
   font-weight: 500;
-  font-display: optional; }
+  font-display: auto; }
 
 /* stylelint-disable */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
