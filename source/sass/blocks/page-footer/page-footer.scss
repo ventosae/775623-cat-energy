@@ -2,6 +2,8 @@
   padding-top: 40px;
   background-color: $text-gray;
   margin: auto;
+  padding-bottom: 40px;
+  transition: all 0.3s ease-out;
 }
 
 .page-footer__wrapper {
@@ -159,7 +161,6 @@
   .page-footer__social {
     border: none;
     min-height: 0;
-    width: 384px;
     height: auto;
   }
 

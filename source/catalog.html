@@ -53,10 +53,35 @@
     <main class="catalog-main__hero">
         <section class="catalog-product">
             <h1 class="catalog-product__main-header">Каталог продукции</h1>
+            <div class="pop-up" id="order-pop-up">
+              <form>
+              <fieldset class="pop-up__filedset">
+                <a class="pop-up__toggle" href="#"></a>
+                <h4 class="pop-up__legend">Мы свяжемся с вами</h4>
+                  <ul class="pop-up__list">
+                      <li class="pop-up__item">
+                          <label class="pop-up__label" for="email">e-&nbsp;mail:*</label>
+                          <input class="pop-up__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                          <svg class="pop-up__icon pop-up__icon--mail" width="100%" height="100%">
+                              <use xlink:href="#icon-mail"></use>
+                          </svg>
+                      </li>
+                      <li class="pop-up__item">
+                          <label class="pop-up__label" for="phone">телефон:*</label>
+                          <input class="pop-up__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                          <svg class="pop-up__icon pop-up__icon--phone" width="100%" height="100%">
+                              <use xlink:href="#icon-phone"></use>
+                          </svg>
+                      </li>
+                  </ul>
+                  <button class="pop-up__button" type="submit" value="submit">отправить заявку</button>
+              </fieldset>
+              </form>
+            </div>
             <ul class="catalog-product__list">
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero" id="pro">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img catalog-product__img--small">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -67,7 +92,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy PRO 500 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -83,12 +108,12 @@
                                 <dd class="catalog-product__column">700 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
@@ -100,7 +125,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper catalog-product__name-wrapper--big">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy PRO 1000 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -116,12 +141,12 @@
                                 <dd class="catalog-product__column">1000 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img catalog-product__img--small">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -133,7 +158,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy PRO 500 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -149,12 +174,12 @@
                                 <dd class="catalog-product__column">700 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -165,7 +190,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper catalog-product__name-wrapper--big-fish">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy PRO 1000 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -181,12 +206,12 @@
                                 <dd class="catalog-product__column">1000 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero" id="slim">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img catalog-product__img--small">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -197,7 +222,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy Slim 500 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -213,12 +238,12 @@
                                 <dd class="catalog-product__column">400 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -229,7 +254,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper catalog-product__name-wrapper--big">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy Slim 1000 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -245,12 +270,12 @@
                                 <dd class="catalog-product__column">700 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
                     <article class="catalog-product__hero">
-                        <a class="catalog-product__link" href="#">
+                        <a class="catalog-product__link" href="#order-pop-up">
                             <picture class="catalog-product__img catalog-product__img--small">
                                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -261,7 +286,7 @@
                             </picture>
                         </a>
                         <div class="catalog-product__name-wrapper">
-                            <a class="catalog-product__link" href="#">
+                            <a class="catalog-product__link" href="#order-pop-up">
                                 <h3 class="catalog-product__name">Cat Energy Slim 500 г</h3>
                             </a>
                             <dl class="catalog-product__row">
@@ -277,15 +302,40 @@
                                 <dd class="catalog-product__column">500 Р.</dd>
                             </dl>
                         </div>
-                        <a class="button catalog-product__button" href="#">Заказать</a>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
                     </article>
                 </li>
                 <li class="catalog-product__item">
-                    <div class="catalog-product__show-all">
-                        <p class="catalog-product__subtitle">Показать еще 100500 товаров</p>
-                        <p class="catalog-product__text">На самом деле вкусов гораздо больше!</p>
-                        <a class="button catalog__button button--grey" href="#">Показать все</a>
-                    </div>
+                    <article class="catalog-product__hero">
+                        <a class="catalog-product__link" href="#order-pop-up">
+                            <picture class="catalog-product__img catalog-product__img--small">
+                                <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+                                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                                <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim Рис 500г">
+                            </picture>
+                        </a>
+                        <div class="catalog-product__name-wrapper">
+                            <a class="catalog-product__link" href="#order-pop-up">
+                                <h3 class="catalog-product__name">Cat Energy Slim 500 г</h3>
+                            </a>
+                            <dl class="catalog-product__row">
+                                <dt class="catalog-product__column">Объем</dt>
+                                <dd class="catalog-product__column">500 г</dd>
+                            </dl>
+                            <dl class="catalog-product__row">
+                                <dt class="catalog-product__column">Вкус</dt>
+                                <dd class="catalog-product__column">Рис</dd>
+                            </dl>
+                            <dl class="catalog-product__row">
+                                <dt class="catalog-product__column">Цена</dt>
+                                <dd class="catalog-product__column">500 Р.</dd>
+                            </dl>
+                        </div>
+                        <a class="button catalog-product__button" href="#order-pop-up">Заказать</a>
+                    </article>
                 </li>
             </ul>
         </section>
@@ -300,7 +350,7 @@
                             <dt class="additional-products__size">1 упаковка (100 г)</dt>
                             <dd class="additional-products__value">200 р.</dd>
                         </dl>
-                        <a class="button additional-products__button" href="#">Заказать</a>
+                        <a class="button additional-products__button" href="#order-pop-up">Заказать</a>
                     </li>
                     <li class="additional-products__item">
                         <h4 class="additional-products__product">Питьевая вода</h4>
@@ -308,7 +358,7 @@
                             <dt class="additional-products__size">5 литров</dt>
                             <dd class="additional-products__value">50 р.</dd>
                         </dl>
-                        <a class="button additional-products__button" href="#">Заказать</a>
+                        <a class="button additional-products__button" href="#order-pop-up">Заказать</a>
                     </li>
                     <li class="additional-products__item">
                         <h4 class="additional-products__product">Молоко</h4>
@@ -316,7 +366,7 @@
                             <dt class="additional-products__size">1 литр</dt>
                             <dd class="additional-products__value">100 р.</dd>
                         </dl>
-                        <a class="button additional-products__button" href="#">Заказать</a>
+                        <a class="button additional-products__button" href="#order-pop-up">Заказать</a>
                     </li>
                     <li class="additional-products__item">
                         <h4 class="additional-products__product">Витамины</h4>
@@ -324,7 +374,7 @@
                             <dt class="additional-products__size">1 упаковка (30 г)</dt>
                             <dd class="additional-products__value">300 р.</dd>
                         </dl>
-                        <a class="button additional-products__button" href="#">Заказать</a>
+                        <a class="button additional-products__button" href="#order-pop-up">Заказать</a>
                     </li>
                 </ul>
                 <div class="additional-products__gift">
@@ -361,35 +411,27 @@
             <div class="page-footer__social">
                 <ul class="page-footer__links">
                     <li class="page-footer__item">
-                        <a class="page-footer__link page-footer__link--vk" href="#">
+                        <a class="page-footer__link page-footer__link--vk" href="#order-pop-up">
                             <svg class="page-footer__img page-footer__img--vk" width="100%" height="100%" viewBox="0 0 22 12">
                                 <use xlink:href="#icon-vk-mobile" fill="#666666"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="page-footer__item">
-                        <a class="page-footer__link page-footer__link--instagram" href="#">
+                        <a class="page-footer__link page-footer__link--instagram" href="#order-pop-up">
                             <svg class="page-footer__img page-footer__img--insta" width="100%" height="100%">
                                 <use xlink:href="#icon-insta-mobile" fill="#666666"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="page-footer__item">
-                        <a class="page-footer__link page-footer__link--facebook" href="#">
+                        <a class="page-footer__link page-footer__link--facebook" href="#order-pop-up">
                             <svg class="page-footer__img page-footer__img--fb" width="100%" height="100%">
                                 <use xlink:href="#icon-fb-mobile" fill="#666666"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="page-footer__copyright">
-                <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <span class="page-footer__copyright-text">HTML Academy</span>
-                    <svg class="page-footer__copyright-img" width="27" height="34">
-                        <use xlink:href="#htmlacademy"></use>
-                    </svg>
-                </a>
             </div>
         </div>
     </footer>

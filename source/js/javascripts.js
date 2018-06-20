@@ -17,6 +17,12 @@ hamburgerBtn.classList.remove("page-header__toggle--closed");
   }, true);
   }
 
+  if(document.addEventListener){
+  document.addEventListener("invalid", function(e){
+    e.target.className += " pop-up__input--invalid";
+  }, true);
+  }
+
 var divisor = document.getElementsByClassName("example__slim")[0],
 slider = document.getElementById("slider");
 function moveDivisor() {
